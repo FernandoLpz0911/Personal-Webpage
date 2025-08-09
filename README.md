@@ -10,4 +10,11 @@ Page will include
 - Technical Skills w onClick showing where I've utilized that skill and how
 - Experiences with a tag towards technical skills
 
+Navbar including buttons to
+- Projects
+- Experiences
+- Technical Skills
+- DevBlogs
+- About Me
+- Contact Me
 
