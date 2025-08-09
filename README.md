@@ -23,3 +23,16 @@ Project Page
 
 Experiences
 - Cards the show the title of the position, dates of the position, Name of place/business, description of position, and the tags correlating to the technical skills
+
+Technical Skills
+
+
+DevBlogs
+
+
+About Me
+
+
+Contact Me
+
+
