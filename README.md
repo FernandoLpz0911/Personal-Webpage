@@ -18,3 +18,8 @@ Navbar including buttons to
 - About Me
 - Contact Me
 
+Project Page
+- Cards that show a thumbnail of the project, description of the project, some code snippets, a demo, and DevBlogs correlated with the Project
+
+Experiences
+- Cards the show the title of the position, dates of the position, Name of place/business, description of position, and the tags correlating to the technical skills
