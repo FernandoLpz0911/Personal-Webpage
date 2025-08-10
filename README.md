@@ -23,16 +23,19 @@ Project Page
 
 Experiences
 - Cards the show the title of the position, dates of the position, Name of place/business, description of position, and the tags correlating to the technical skills
+- Uses Sanity API for content management
 
 Technical Skills
-
+- Uses Sanity API for content management
 
 DevBlogs
+- Uses Sanity API for content management
 
 
 About Me
-
+- Uses Sanity API for content management
 
 Contact Me
+- Uses EmailJS for contact form
 
 
