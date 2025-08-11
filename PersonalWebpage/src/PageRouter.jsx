@@ -14,8 +14,8 @@ import About from './pages/About';
 function PageRouter() {
     return (
         <>
+            <NavBar/>
             <Routes>
-                <NavBar/>
                 <Route path='/' element={<Home />} />
 
                 {/**
