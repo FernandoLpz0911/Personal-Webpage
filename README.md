@@ -13,7 +13,6 @@ Page will include
 Navbar including buttons to
 - Projects
 - Experiences
-- Technical Skills
 - DevBlogs
 - About Me
 - Contact Me
