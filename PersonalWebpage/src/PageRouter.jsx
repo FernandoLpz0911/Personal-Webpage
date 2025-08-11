@@ -17,11 +17,11 @@ function PageRouter() {
             <NavBar/>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/Projects' element={<Home />} />
-                <Route path='/Experience' element={<Home />} />
-                <Route path='/DevBlogs' element={<Home />} />
-                <Route path='/About' element={<Home />} />
-                <Route path='/Contact' element={<Home />} />
+                <Route path='/Projects' element={<Projects />} />
+                <Route path='/Experience' element={<Experience />} />
+                <Route path='/DevBlogs' element={<DevBlogs />} />
+                <Route path='/About' element={<About />} />
+                <Route path='/Contact' element={<Contact />} />
             </Routes>
         </>
     )
