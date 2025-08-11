@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './cssfiles/Home.css'
+import './cssfiles/DevBlogs.css'
 
 function DevBlogs() {
   return (
