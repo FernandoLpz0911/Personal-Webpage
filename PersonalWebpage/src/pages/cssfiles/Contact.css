@@ -1,6 +1,6 @@
 
 .submit-inquiry-button {
-  background-color: #ff69b4;
+  background-color: #000000;
   color: white;
   padding: 14px 25px;
   border: none;
@@ -16,7 +16,7 @@
 }
 
 .submit-inquiry-button:hover {
-  background-color: #e05c9f;
+  background-color: #222222;
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
