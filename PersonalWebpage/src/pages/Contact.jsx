@@ -139,7 +139,7 @@ const Contact = () => {
 
                   <div className='social-wrapper'>
                     <a href="https://www.linkedin.com/in/fernando-lopez-dev/" className="social-icon-link">
-                      <img src="/" alt="LinkedIn" />
+                      <img src="/InBug-White.png" alt="LinkedIn" />
                     </a>
 
                     <a href="https://github.com/FernandoLpz0911" className="social-icon-link">
