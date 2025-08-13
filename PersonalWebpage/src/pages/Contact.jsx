@@ -143,7 +143,7 @@ const Contact = () => {
                     </a>
 
                     <a href="https://github.com/FernandoLpz0911" className="social-icon-link">
-                      <img src="/" alt="GitHub" />
+                      <img src="/github-mark-white.png" alt="GitHub" />
                     </a>
 
                   </div>
