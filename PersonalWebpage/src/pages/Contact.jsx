@@ -75,7 +75,7 @@ const Contact = () => {
 
             <div className="contact-form-wrapper">
               <p className="contact-intro-text">
-                Have a question about an order, custom sweets, or catering? Send us a message!
+                If you'd like to get in touch about business inquiries, or just want to say hello, please fill out the form below! I look forward to hearing from you.
               </p>
 
               <form ref={form} className="contact-form" onSubmit={sendEmail}>
@@ -124,14 +124,13 @@ const Contact = () => {
 
               <div className="contact-details-grid">
                 <div className="detail-item">
-                  <span className="detail-icon">✉️</span>
-                  <h3 className="detail-label">Email Us</h3>
-                  <p className="detail-value"><a href="mailto:ourdulcetentaciones@gmail.com" className="contact-link">ourdulcetentaciones@gmail.com</a></p>
+                  <h3 className="detail-label">Email Me</h3>
+                  <p className="detail-value"><a href="mailto:FernandoLpz0911.business@gmail.com" className="contact-link">FernandoLpz0911.business@gmail.com</a></p>
                 </div>
 
                 <div className="detail-item">
                   <span className="detail-icon"></span>
-                  <h3 className="detail-label">Connect With Us</h3>
+                  <h3 className="detail-label">Connect With Me</h3>
 
                   <div className='social-wrapper'>
                     <a href="#" className="social-icon-link">
@@ -147,14 +146,6 @@ const Contact = () => {
                     </a>
                   </div>
 
-                </div>
-
-                <div className="detail-item">
-                  <span className="detail-icon">⏰</span>
-                  <h3 className="detail-label">Business Hours</h3>
-                  <p className="detail-value">Mon - Fri: 9 AM - 5 PM</p>
-                  <p className="detail-value">Sat: 10 AM - 2 PM</p>
-                  <p className="detail-value">Sun: Closed</p>
                 </div>
                 
               </div>
