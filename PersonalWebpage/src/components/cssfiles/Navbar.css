@@ -27,6 +27,13 @@
     margin-right: auto;
 }
 
+.nav-links {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+        align-items: center;
+}
+
 .nav-link {
     color: #FFFFFF;
     text-decoration: none;
@@ -60,7 +67,6 @@
         display: none;
     }
     
-    /* Styles for the hamburger menu button */
     .menu-toggle {
         display: block;
         cursor: pointer;
@@ -75,7 +81,6 @@
         transition: 0.4s;
     }
 
-    /* Styles for the dropdown/full-screen menu on mobile */
     .mobile-nav-links {
         display: none;
         position: absolute;
@@ -104,7 +109,6 @@
     }
 }
 
-/* --- Desktop-Specific Styles (Centered Logo) --- */
 @media (min-width: 768px) {
     .navbar-container {
         display: flex;
@@ -132,7 +136,6 @@
         gap: 32px;
     }
     
-    /* Hide mobile menu on desktop */
     .menu-toggle, .mobile-nav-links {
       display: none;
     }
