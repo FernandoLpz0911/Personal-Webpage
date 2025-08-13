@@ -1,6 +1,6 @@
 .navbar {
-    background-color: #F48FB1;
-    color: #FFFFFF;
+    background-color: #ff6a6a9c;
+    color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     height: 65px;
     display: flex;
@@ -41,29 +41,6 @@
     color: #F8F8F8;
 }
 
-.bakery-logo {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-family: 'Lobster', cursive;
-    font-size: 1rem;
-    font-weight: normal;
-    position: static;
-    height:auto;
-    width: auto;
-    flex-shrink: 0;
-    margin-right: 30px;
-    transition: color 0.2s ease;
-}
-
-.bakery-image {
-    height: 55px;
-    width: auto;
-}
-
-.bakery-logo:hover {
-    color: #F8F8F8;
-}
-
 .nav-right-group {
     display: flex;
     align-items: center;
@@ -81,10 +58,6 @@
     .nav-right-group,
     .nav-links-desktop {
         display: none;
-    }
-    
-    .bakery-logo {
-        margin-right: auto;
     }
     
     /* Styles for the hamburger menu button */
@@ -157,11 +130,6 @@
         display: flex;
         justify-content: flex-end;
         gap: 32px;
-    }
-    
-    .bakery-logo {
-        flex-shrink: 0;
-        margin: 0 32px;
     }
     
     /* Hide mobile menu on desktop */
