@@ -69,7 +69,7 @@ const Contact = () => {
     <div className="contact-page-container">
       <main className="contact-main-content">
         <div className="content-wrapper">
-          <h1 className="section-heading">Contact Us</h1>
+          <h1 className="section-heading">Contact Me</h1>
 
           <div className="contact-info-and-form">
 

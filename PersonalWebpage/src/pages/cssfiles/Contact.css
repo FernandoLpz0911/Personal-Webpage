@@ -43,7 +43,7 @@
 
 .contact-page-container {
     padding: 40px 20px;
-    background-color: #fce4ec;
+    background-color: #000000;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
     display: flex;
     justify-content: center;
@@ -51,13 +51,13 @@
 }
 
 .contact-link {
-    color: #4B5563;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .contact-link:hover {
-    color: #596677;
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -93,7 +93,7 @@
 .contact-form-wrapper {
     flex: 1;
     min-width: 300px;
-    background-color: #ffcee2;
+    background-color: #757575;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -114,7 +114,7 @@
 
 .contact-intro-text {
     font-size: 1.1em;
-    color: #4a4a4a;
+    color: #ffffff;
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -170,7 +170,7 @@
 .detail-label {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #E91E63;
+    color: #ffffff;
     margin: 5px;
     font-family: 'Open Sans';
 }
@@ -179,5 +179,5 @@
     font-size: 0.95rem;
     margin: 5px;
     margin-bottom: 0;
-    color: #4B5563;
+    color: #ffffff;
 }
