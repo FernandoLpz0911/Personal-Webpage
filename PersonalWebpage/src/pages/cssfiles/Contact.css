@@ -15,6 +15,17 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.social-icon {
+    width: 40px;
+}
+
+.social-wrapper {
+    margin: 5px;
+    display:flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
 .submit-inquiry-button:hover {
   background-color: #222222;
   transform: translateY(-2px);
@@ -108,7 +119,7 @@
 
 @media (min-width: 768px) {
     .contact-details-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 

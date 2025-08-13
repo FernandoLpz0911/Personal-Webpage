@@ -139,11 +139,11 @@ const Contact = () => {
 
                   <div className='social-wrapper'>
                     <a href="https://www.linkedin.com/in/fernando-lopez-dev/" className="social-icon-link">
-                      <img src="/InBug-White.png" alt="LinkedIn" />
+                      <img src="/InBug-White.png" alt="LinkedIn" className='social-icon'/>
                     </a>
 
                     <a href="https://github.com/FernandoLpz0911" className="social-icon-link">
-                      <img src="/github-mark-white.png" alt="GitHub" />
+                      <img src="/github-mark-white.png" alt="GitHub" className='social-icon'/>
                     </a>
 
                   </div>
