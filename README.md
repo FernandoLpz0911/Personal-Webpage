@@ -39,5 +39,4 @@ About Me
 
 Contact Me
 - Uses EmailJS for contact form
-
-
+- Contact me page for people to come into contact with me based on whatever they'd like with my linkedin, github, and mobile cell number
