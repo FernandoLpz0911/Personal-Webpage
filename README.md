@@ -26,6 +26,9 @@ Experiences
 
 Technical Skills
 - Uses Sanity API for content management
+- Shows my known programming languages
+- Shows my known frameworks
+- Shows my known tools
 
 DevBlogs
 - Uses Sanity API for content management
