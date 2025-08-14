@@ -33,6 +33,9 @@ DevBlogs
 
 About Me
 - Uses Sanity API for content management
+- Explains my past with relevance to computer science
+- Explains my current situation in regards to what I'm doing to further myself short-term and generally longer term.
+- Explains my future outlooks in what my long-term goals are.
 
 Contact Me
 - Uses EmailJS for contact form
