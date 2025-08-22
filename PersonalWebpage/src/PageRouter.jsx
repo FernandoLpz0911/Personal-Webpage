@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, useNavigate} from 'react-router-dom';
 
 // component imports
 import NavBar from './components/Navbar';
@@ -12,9 +13,21 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 
 function PageRouter() {
+    const [isAssembled, setIsAssembled] = useState(true);
+    const navigate = useNavigate();
+
+    const handlePageTransition = (targetPath) => {
+        setIsAssembled(false);  // break down pieces
+
+        setTimeout(() => {
+            navigate(targetPath);
+            setIsAssembled(true);   // reassemble pieces
+        }, 1000); // time it takes
+    };
+
     return (
         <>
-            <NavBar/>
+            <NavBar onNavigate={handlePageTransition}/>
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/Projects' element={<Projects />} />

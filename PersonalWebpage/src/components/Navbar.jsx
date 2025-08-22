@@ -7,12 +7,29 @@ const Navbar = () => {
       <div className="navbar-container">
       
         <div className="nav-links">
-          <Link to="/" className="nav-link"> Home </Link>
-          <Link to="/Projects" className="nav-link"> Projects </Link>
+          <button id='animate-button' className='page'>
+            <Link to="/" className="nav-link"> Home </Link>
+          </button>
+
+          <button id='animate-button' className='page'>
+            <Link to="/Projects" className="nav-link"> Projects </Link>
+          </button>
+
+          <button id='animate-button' className='page'>
           <Link to="/Experience" className="nav-link"> Experience </Link>
-          <Link to="/DevBlogs" className="nav-link"> Dev Blogs </Link>
-          <Link to="/About" className="nav-link"> About Me </Link>
-          <Link to="/Contact" className="nav-link"> Contact </Link>
+          </button>
+
+          <button id='animate-button' className='page'>
+            <Link to="/DevBlogs" className="nav-link"> Dev Blogs </Link>
+          </button>
+
+          <button id='animate-button' className='page'>
+            <Link to="/About" className="nav-link"> About Me </Link>
+          </button>
+          
+          <button id='animate-button' className='page'>
+            <Link to="/Contact" className="nav-link"> Contact </Link>
+          </button>
         </div>
         
       </div>
