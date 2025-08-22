@@ -96,12 +96,12 @@ const Contact = () => {
 
                 <div className="form-group">
                   <label htmlFor="contactSubject">Subject (Optional)</label>
-                  <input type="text" id="contactSubject" name="user_subject" placeholder="e.g., Catering Inquiry, Order Question" className="input-field" />
+                  <input type="text" id="contactSubject" name="user_subject" placeholder="Business Inquiry, Personal Inquiry, etc" className="input-field" />
                 </div>
 
                 <div className="form-group">
                   <label htmlFor="contactMessage">Your Message</label>
-                  <textarea id="contactMessage" name="user_message" rows="6" placeholder="Tell us more about your sweet needs!" className="input-field"></textarea>
+                  <textarea id="contactMessage" name="user_message" rows="6" placeholder="Tell me about what you'd like to discuss." className="input-field"></textarea>
                 </div>
 
                 <button
@@ -119,7 +119,7 @@ const Contact = () => {
             <div className="contact-details-wrapper">
 
               <p className="contact-intro-text">
-                Prefer to chat? Find our contact details and hours below.
+                Prefer a direct contact?
               </p>
 
               <div className="contact-details-grid">
@@ -129,21 +129,23 @@ const Contact = () => {
                 </div>
 
                 <div className="detail-item">
+                  <h3 className="detail-label">Message Me</h3>
+                  <p className="detail-value"><a href="tel:872-305-7616" className="contact-link">872-305-7616</a></p>
+                </div>
+
+                <div className="detail-item">
                   <span className="detail-icon"></span>
                   <h3 className="detail-label">Connect With Me</h3>
 
                   <div className='social-wrapper'>
-                    <a href="#" className="social-icon-link">
-                      <img src="/BakeryWebsite/images/social-facebook.png" alt="Facebook" />
+                    <a href="https://www.linkedin.com/in/fernando-lopez-dev/" className="social-icon-link">
+                      <img src="/InBug-White.png" alt="LinkedIn" className='social-icon'/>
                     </a>
 
-                    <a href="#" className="social-icon-link">
-                      <img src="/BakeryWebsite/images/social-instagram.png" alt="Instagram" />
+                    <a href="https://github.com/FernandoLpz0911" className="social-icon-link">
+                      <img src="/github-mark-white.png" alt="GitHub" className='social-icon'/>
                     </a>
 
-                    <a href="#" className="social-icon-link">
-                      <img src="/BakeryWebsite/images/social-twitter.png" alt="Twitter" />
-                    </a>
                   </div>
 
                 </div>

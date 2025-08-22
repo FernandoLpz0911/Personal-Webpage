@@ -26,6 +26,9 @@ Experiences
 
 Technical Skills
 - Uses Sanity API for content management
+- Shows my known programming languages
+- Shows my known frameworks
+- Shows my known tools
 
 DevBlogs
 - Uses Sanity API for content management
@@ -33,8 +36,10 @@ DevBlogs
 
 About Me
 - Uses Sanity API for content management
+- Explains my past with relevance to computer science
+- Explains my current situation in regards to what I'm doing to further myself short-term and generally longer term.
+- Explains my future outlooks in what my long-term goals are.
 
 Contact Me
 - Uses EmailJS for contact form
-
-
+- Contact me page for people to come into contact with me based on whatever they'd like with my linkedin, github, and mobile cell number
