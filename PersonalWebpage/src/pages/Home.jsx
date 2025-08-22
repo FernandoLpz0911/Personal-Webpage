@@ -6,7 +6,7 @@ function Home() {
     <>
       <div className='home-container'>
         <h1>Fernando Lopez</h1>
-        <p>I am a Junior Computer Science student at University Of Illinois at Chicago, I enjoy working on programming projects and am actually interested in branching out into some hardware like arduino's and raspberry pi's</p>  
+        <p>I am a Software Developer that currently specializes in Front-end. Back-end will be next.</p>  
       </div>
     </>
   )
