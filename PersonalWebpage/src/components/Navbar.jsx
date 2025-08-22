@@ -1,33 +1,33 @@
 import { Link } from 'react-router-dom';
 import '../components/cssfiles/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ( {onNavigate}) => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
       
         <div className="nav-links">
-          <button id='animate-button' className='page'>
-            <Link to="/" className="nav-link"> Home </Link>
+          <button className='page' onClick={() => onNavigate('/')}>
+            Home
           </button>
 
-          <button id='animate-button' className='page'>
-            <Link to="/Projects" className="nav-link"> Projects </Link>
+          <button className='page' onClick={() => onNavigate('/Projects')}>
+            Projects
           </button>
 
-          <button id='animate-button' className='page'>
+          <button className='page' onClick={() => onNavigate('/Experience')}>
           <Link to="/Experience" className="nav-link"> Experience </Link>
           </button>
 
-          <button id='animate-button' className='page'>
+          <button className='page' onClick={() => onNavigate('/DevBlogs')}>
             <Link to="/DevBlogs" className="nav-link"> Dev Blogs </Link>
           </button>
 
-          <button id='animate-button' className='page'>
+          <button className='page' onClick={() => onNavigate('/About')}>
             <Link to="/About" className="nav-link"> About Me </Link>
           </button>
           
-          <button id='animate-button' className='page'>
+          <button className='page' onClick={() => onNavigate('/Contact')}>
             <Link to="/Contact" className="nav-link"> Contact </Link>
           </button>
         </div>
