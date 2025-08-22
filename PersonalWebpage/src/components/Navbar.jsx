@@ -16,19 +16,19 @@ const Navbar = ( {onNavigate}) => {
           </button>
 
           <button className='page' onClick={() => onNavigate('/Experience')}>
-          <Link to="/Experience" className="nav-link"> Experience </Link>
+            Experience
           </button>
 
           <button className='page' onClick={() => onNavigate('/DevBlogs')}>
-            <Link to="/DevBlogs" className="nav-link"> Dev Blogs </Link>
+            Dev Blogs
           </button>
 
           <button className='page' onClick={() => onNavigate('/About')}>
-            <Link to="/About" className="nav-link"> About Me </Link>
+            About Me
           </button>
           
           <button className='page' onClick={() => onNavigate('/Contact')}>
-            <Link to="/Contact" className="nav-link"> Contact </Link>
+            Contact
           </button>
         </div>
         
