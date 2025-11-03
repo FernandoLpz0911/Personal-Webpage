@@ -85,7 +85,7 @@ button:focus-visible {
     width:100vw;
     border:1px solid rgb(88, 88, 88);
     font-size:20px;
-    background: linear-gradient(110deg, #FF9933, rgb(32, 25, 25), #000000, #FF9933, rgb(32, 25, 25));
+    background: linear-gradient(110deg, #5e3812, #222222, #222222, #5e3812, #222222);
     background-size: 400% 400%;
     
 
