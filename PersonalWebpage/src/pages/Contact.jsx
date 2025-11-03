@@ -19,7 +19,7 @@ const Contact = () => {
 
   // initialize the emailjs service
   useEffect(() => {
-    emailjs.init('5WhVsHFC0WI8ZP7jJ'); // FIXME: NEED TO ADJUST WITH MY EMAILJS API KEY
+    emailjs.init('NKHVAqhW9gU2a16Ua'); // FIXME: NEED TO ADJUST WITH MY EMAILJS API KEY
   }, []);
 
   // function to send the email to emailjs service
@@ -32,7 +32,7 @@ const Contact = () => {
     setMessageStatus(null);
 
     // send the form data to emailjs
-    emailjs.sendForm('default_service', 'template_c9ycbm5', form.current)
+    emailjs.sendForm('service_f0hirps', 'template_o5kw3t2', form.current)
       .then(
 
         // if successful, state successful, and reset the form
