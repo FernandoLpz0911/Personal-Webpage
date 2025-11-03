@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../components/cssfiles/Navbar.css';
+import ClickToggle  from './ClickToggle';
 
 const Navbar = () => {
   return (
@@ -13,6 +14,7 @@ const Navbar = () => {
           <Link to="/DevBlogs" className="nav-link"> Dev Blogs </Link>
           <Link to="/About" className="nav-link"> About Me </Link>
           <Link to="/Contact" className="nav-link"> Contact </Link>
+          <ClickToggle/>
         </div>
         
       </div>
