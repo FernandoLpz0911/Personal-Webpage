@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import '../components/cssfiles/Navbar.css';
 import ClickToggle  from './ClickToggle';
 
-const Navbar = () => {
+const Navbar = ( {onNavigate}) => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
