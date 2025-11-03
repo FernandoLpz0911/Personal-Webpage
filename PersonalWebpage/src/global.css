@@ -11,6 +11,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  
 }
 
 a {
@@ -29,6 +31,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: rgb(61, 61, 61);
+  
 }
 
 h1 {
@@ -75,19 +78,31 @@ button:focus-visible {
 }
 
 
-.puzzle-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
+
+#gradient
+{
+    height:100vh;
+    width:100vw;
+    border:1px solid rgb(88, 88, 88);
+    font-size:20px;
+    background: linear-gradient(110deg, #FF9933, rgb(32, 25, 25), #000000, #FF9933, rgb(32, 25, 25));
+    background-size: 400% 400%;
+    
+
+    -webkit-animation: Animation 15s linear infinite;
+    -moz-animation: Animation 15s linear infinite;
+    animation: Animation 15s linear infinite;
 }
 
-.puzzle-piece {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 25px; 
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+@-webkit-keyframes Animation {
+    0%{background-position:0% 0%}
+    100%{background-position:100% 100%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:0% 0%}
+    100%{background-position:100% 100%}
+}
+@keyframes Animation { 
+    0%{background-position:0% 0%}
+    100%{background-position:100% 100%}
 }
