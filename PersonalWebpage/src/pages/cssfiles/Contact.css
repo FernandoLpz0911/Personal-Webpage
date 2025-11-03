@@ -102,10 +102,25 @@
 .contact-form-wrapper {
     flex: 1;
     min-width: 300px;
-    background-color: #757575;
+    background-color: linear-gradient(110deg, #5e3812, #222222, #222222, #5e3812, #222222);;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+
+@-webkit-keyframes Animation {
+    0%{background-position:0% 0%}
+    100%{background-position:100% 100%}
+}
+@-moz-keyframes Animation {
+    0%{background-position:0% 0%}
+    100%{background-position:100% 100%}
+}
+@keyframes Animation { 
+    0%{background-position:0% 0%}
+    100%{background-position:100% 100%}
 }
 
 .contact-details-grid {

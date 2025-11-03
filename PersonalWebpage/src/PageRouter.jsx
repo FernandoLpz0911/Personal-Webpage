@@ -27,18 +27,15 @@ function PageRouter() {
 
     return (
         <>
-            <div id="gradient">
-                <NavBar onNavigate={handlePageTransition}/>
-                <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/Projects' element={<Projects />} />
-                    <Route path='/Experience' element={<Experience />} />
-                    <Route path='/DevBlogs' element={<DevBlogs />} />
-                    <Route path='/About' element={<About />} />
-                    <Route path='/Contact' element={<Contact />} />
-                </Routes>
-
-            </div>
+            <NavBar onNavigate={handlePageTransition}/>
+            <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/Projects' element={<Projects />} />
+                <Route path='/Experience' element={<Experience />} />
+                <Route path='/DevBlogs' element={<DevBlogs />} />
+                <Route path='/About' element={<About />} />
+                <Route path='/Contact' element={<Contact />} />
+            </Routes>
         </>
     )
 }
