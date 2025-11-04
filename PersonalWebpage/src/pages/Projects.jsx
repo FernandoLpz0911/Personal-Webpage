@@ -4,7 +4,19 @@ import './cssfiles/Projects.css'
 function Projects() {
   return (
     <>
-     <div>
+     <div className='project-page'>
+      <div className='project-card'>
+        test
+      </div>
+      <div className='project-card'>
+        test
+      </div>
+      <div className='project-card'>
+        test
+      </div>
+      <div className='project-card'>
+        test
+      </div>
      </div>
     </>
   )
