@@ -6,16 +6,16 @@ function Projects() {
     <>
      <div className='project-page'>
       <div className='project-card'>
-        test
+        Coming Soon 
       </div>
       <div className='project-card'>
-        test
+        Coming Soon 
       </div>
       <div className='project-card'>
-        test
+        Coming Soon
       </div>
       <div className='project-card'>
-        test
+        Coming Soon
       </div>
      </div>
     </>
