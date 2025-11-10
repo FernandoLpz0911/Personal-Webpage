@@ -32,15 +32,13 @@ body {
   display: flex;
 
   width:100vw;
-  border:1px solid rgb(88, 88, 88);
   font-size:20px;
-  background: linear-gradient(110deg, #5e3812, #222222, #222222, #5e3812, #222222);
+  background: linear-gradient(110deg, #7a5818, #31281c, #31281c, #7a5818, #31281c);
   background-size: 400% 400%;
-    
 
-  -webkit-animation: Animation 15s linear infinite;
-  -moz-animation: Animation 15s linear infinite;
-  animation: Animation 15s linear infinite;
+  -webkit-animation: Animation 8s linear infinite;
+  -moz-animation: Animation 8s linear infinite;
+  animation: Animation 8s linear infinite;
   
 }
 

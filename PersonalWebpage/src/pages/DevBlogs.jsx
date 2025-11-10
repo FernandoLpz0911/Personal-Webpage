@@ -5,7 +5,7 @@ function DevBlogs() {
   return (
     <>
       <div>
-        Coming Soon 
+        Coming Soon
       </div>
     </>
   )

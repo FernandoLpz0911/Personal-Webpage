@@ -5,7 +5,7 @@ function Experience() {
   return (
     <>
       <div>
-        Coming Soon 
+        Coming Soon
       </div>
     </>
   )
