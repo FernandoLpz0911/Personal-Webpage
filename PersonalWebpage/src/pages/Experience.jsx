@@ -4,7 +4,7 @@ import './cssfiles/Experience.css'
 function Experience() {
   return (
     <>
-      <div>
+      <div className='experience-container'>
         Coming Soon
       </div>
     </>
