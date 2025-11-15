@@ -2,6 +2,9 @@ import './cssfiles/Home.css'
 import emailjs from '@emailjs/browser';
 import './cssfiles/Contact.css';
 import React, { useRef, useState, useEffect } from 'react'; // Import useState
+import './cssfiles/About.css'
+import './cssfiles/Experience.css'
+import './cssfiles/Projects.css'
 
 
 
