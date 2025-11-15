@@ -4,7 +4,10 @@ import './cssfiles/DevBlogs.css'
 function DevBlogs() {
   return (
     <>
-      <div>
+      <div className='devblogs-container'>
+        <text>
+          Coming Soon
+        </text>
       </div>
     </>
   )

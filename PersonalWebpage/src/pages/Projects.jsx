@@ -6,7 +6,19 @@ import './cssfiles/Contact.css';
 function Projects() {
   return (
     <>
-     <div>
+     <div className='project-page'>
+      <div className='project-card'>
+        Coming Soon 
+      </div>
+      <div className='project-card'>
+        Coming Soon 
+      </div>
+      <div className='project-card'>
+        Coming Soon
+      </div>
+      <div className='project-card'>
+        Coming Soon
+      </div>
      </div>
     </>
   )
