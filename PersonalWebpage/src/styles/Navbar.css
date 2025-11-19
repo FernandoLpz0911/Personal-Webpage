@@ -28,14 +28,28 @@
 }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+  
+  /* Typography Styles */
+  font-family: var(--font-sans);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-brand-primary);
-  letter-spacing: -0.025em;
+  color: var(--color-text-primary);
+  letter-spacing: -0.03em;
+  text-decoration: none;
 }
 
-.nav-logo span {
-  color: #fff;
+.logo-highlight {
+  color: var(--color-brand-primary);
+  margin-left: 0.25rem;
+}
+
+.nav-logo:hover {
+  opacity: 0.9;
 }
 
 .nav-menu {
@@ -55,9 +69,8 @@
 
 /* Mobile Placeholder */
 .mobile-menu-btn {
-  font-family: monospace;
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-primary);
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
