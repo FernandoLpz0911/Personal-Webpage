@@ -1,3 +1,4 @@
+
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -21,8 +22,8 @@
   margin-bottom: 1rem;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
-  background-color: rgba(14, 165, 233, 0.1);
-  border: 1px solid rgba(14, 165, 233, 0.2);
+  background-color: rgba(255, 200, 0, 0.1);
+  border: 1px solid rgba(255, 200, 0, 0.2);
   color: var(--color-brand-primary);
   font-size: 0.875rem;
   font-weight: 500;
@@ -39,7 +40,7 @@
 }
 
 .hero-highlight {
-  background: linear-gradient(to right, var(--color-brand-primary), #6366f1);
+  background: linear-gradient(to right, var(--color-brand-primary), #FFA500); /* Gold to Orange */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -73,13 +74,13 @@
 }
 
 .btn-primary {
-  background-color: var(--color-brand-hover);
-  color: #fff;
+  background-color: var(--color-brand-primary);
+  color: #000; /* Black text on gold button */
   box-shadow: 0 10px 15px -3px var(--color-brand-glow);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-brand-primary);
+  background-color: var(--color-brand-hover);
   transform: scale(1.05);
 }
 
@@ -92,6 +93,7 @@
 .btn-secondary:hover {
   background-color: var(--color-border);
   transform: scale(1.05);
+  border-color: var(--color-text-muted);
 }
 
 @media (min-width: 768px) {

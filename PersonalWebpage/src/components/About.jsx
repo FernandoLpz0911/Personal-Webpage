@@ -1,3 +1,4 @@
+
 import React from 'react';
 import '../styles/About.css';
 
@@ -9,7 +10,7 @@ const About = () => {
           <span className="section-line"></span>
           About Me
         </h2>
-        <div className="about-grid">
+        <div className="about-content-wrapper">
           <div className="about-text">
             <p>
               I'm a passionate developer with a keen eye for design and a drive to build efficient, scalable web applications. 
@@ -22,17 +23,6 @@ const About = () => {
             <p>
               When I'm not coding, you can find me exploring new web technologies, contributing to open source, or optimizing user experiences.
             </p>
-          </div>
-          <div className="about-visual">
-            <div className="profile-card">
-               <div className="profile-overlay"></div>
-               <div className="profile-content">
-                  <div className="profile-icon">👨‍💻</div>
-                  <h3 className="profile-title">Tech Enthusiast</h3>
-                  <p className="profile-subtitle">Building the future, one component at a time.</p>
-               </div>
-            </div>
-            <div className="visual-decoration"></div>
           </div>
         </div>
       </div>

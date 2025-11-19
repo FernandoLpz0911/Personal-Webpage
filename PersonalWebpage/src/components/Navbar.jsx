@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo">
-          FL<span>.</span>
+          Fernando Lopez
         </div>
         <ul className="nav-menu">
           {navLinks.map((link) => (

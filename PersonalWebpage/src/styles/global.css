@@ -1,27 +1,31 @@
-:root {
-  /* Color Palette */
-  --color-bg: #020617; /* Slate 950 */
-  --color-surface: #0f172a; /* Slate 900 */
-  --color-surface-light: #1e293b; /* Slate 800 */
-  --color-border: #334155; /* Slate 700 */
-  
-  --color-text-primary: #e2e8f0; /* Slate 200 */
-  --color-text-secondary: #94a3b8; /* Slate 400 */
-  --color-text-muted: #64748b; /* Slate 500 */
-  
-  --color-brand-primary: #0ea5e9; /* Sky 500 */
-  --color-brand-hover: #0284c7; /* Sky 600 */
-  --color-brand-dark: #0c4a6e; /* Sky 900 */
-  --color-brand-glow: rgba(14, 165, 233, 0.2);
 
-  --color-success: #16a34a;
-  --color-error: #dc2626;
+:root {
+  /* Color Palette - Business Card Inspired (Black & Gold) */
+  /* Deep Carbon/Black Backgrounds */
+  --color-bg: #050505; 
+  --color-surface: #0a0a0a;
+  --color-surface-light: #141414;
+  --color-border: #262626;
+  
+  /* Text Colors */
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a3a3a3;
+  --color-text-muted: #737373;
+  
+  /* Brand Colors (Gold/Amber) */
+  --color-brand-primary: #FFC800; /* Vibrant Gold */
+  --color-brand-hover: #E0B000;   /* Darker Gold/Amber */
+  --color-brand-dark: #7A5C00;    /* Bronze/Dark Gold */
+  --color-brand-glow: rgba(255, 200, 0, 0.3);
+
+  --color-success: #10b981;
+  --color-error: #ef4444;
 
   /* Typography */
   --font-sans: 'Inter', sans-serif;
 
   /* Spacing */
-  --spacing-container: 1152px; /* max-w-6xl equivalent */
+  --spacing-container: 1152px;
 }
 
 * {
@@ -78,7 +82,7 @@ ul {
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-text-muted); 
+  background: var(--color-brand-dark); 
 }
 
 /* Utilities */
@@ -96,11 +100,13 @@ ul {
   display: flex;
   align-items: center;
   gap: 1rem;
+  text-shadow: 0 0 20px rgba(255, 200, 0, 0.2); /* Subtle gold glow */
 }
 
 .section-line {
   width: 3rem;
-  height: 1px;
+  height: 2px;
   background-color: var(--color-brand-primary);
+  box-shadow: 0 0 10px var(--color-brand-primary); /* Neon gold line */
   display: block;
 }
