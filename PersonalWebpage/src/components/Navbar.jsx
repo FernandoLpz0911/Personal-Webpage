@@ -1,12 +1,14 @@
 
+
 import React, { useState, useEffect } from 'react';
+import Logo from './Logo';
 import '../styles/Navbar.css';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
+  { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -25,7 +27,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <a href="#home" className="nav-logo" aria-label="Home">
-          Fernando <span className="logo-highlight">Lopez</span>
+          <Logo width={50} height={50} />
         </a>
         <ul className="nav-menu">
           {navLinks.map((link) => (

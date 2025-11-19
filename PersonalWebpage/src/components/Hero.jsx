@@ -7,10 +7,10 @@ const Hero = () => {
     <section id="home" className="hero-section">
       <div className="hero-content">
         <div className="status-badge">
-          CS Student @ UIC '26
+          Computer Science Student @ UIC
         </div>
         <h1 className="hero-title">
-          Hi, I'm <span className="hero-highlight">Fernando Lopez</span>.
+          Hello, I'm <span className="hero-highlight">Fernando Lopez</span>.
         </h1>
         <p className="hero-subtitle">
           Software Engineer Architecting Scalable Systems.
