@@ -2,28 +2,27 @@
 import React from 'react';
 import '../styles/Projects.css';
 
-// Resume Data
 const projects = [
   {
     id: 1,
     title: "Smart Notes Multi-Platform App",
     description: "A personalized, high-performance notes app MVP built in collaboration with other engineers. Features custom C++ conversion logic integrated with Flutter/Dart and Firebase, supporting seamless synchronization for 20,000+ daily edits.",
     techStack: ["C++", "Dart", "Flutter", "Firebase"],
-    image: "https://picsum.photos/600/400?random=10" // Placeholder
+    image: "NotesApp.png"
   },
   {
     id: 2,
     title: "Digital Art Watermark",
     description: "A verifiable permission system using Merkle Trees and Bloom Filters to provide tamper-proof image verification. Reduced hash lookup time to O(log n).",
     techStack: ["React", "Django", "SQLite", "Algorithms"],
-    image: "https://picsum.photos/600/400?random=11" // Placeholder
+    image: "AIWatermarkImage.png"
   },
   {
     id: 3,
     title: "Dulce Tentaciones",
     description: "Full-stack e-commerce platform for a startup bakery. Integrated Sanity CMS for dynamic content and Brevo for marketing, supporting 1,000+ monthly form submissions.",
     techStack: ["React", "Sanity API", "Brevo", "CSS"],
-    image: "https://picsum.photos/600/400?random=12" // Placeholder
+    image: "DulceTentaciones.png"
   }
 ];
 
