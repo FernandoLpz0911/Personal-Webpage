@@ -18,11 +18,82 @@
   color: var(--color-text-secondary);
   font-size: 1.125rem;
   line-height: 1.75;
-  max-width: 800px; /* Limit width for readability */
-  text-align: left; /* Keep text left aligned for readability, though container is centered */
+  max-width: 800px;
+  text-align: left; 
 }
 
 .highlight {
   color: var(--color-brand-primary);
   font-weight: 600;
+}
+
+/* Education Block */
+.education-block {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background-color: var(--color-surface);
+  border-left: 3px solid var(--color-brand-primary);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.uni-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.uni-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.uni-degree {
+  color: var(--color-brand-primary);
+  font-size: 0.95rem;
+}
+
+.coursework-list {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.coursework-list strong {
+  color: var(--color-text-secondary);
+}
+
+/* Skills Section */
+.skills-container {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--color-surface-light);
+}
+
+.skills-title {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-pill {
+  font-size: 0.875rem;
+  color: var(--color-brand-primary);
+  background-color: rgba(255, 200, 0, 0.05);
+  border: 1px solid rgba(255, 200, 0, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.skill-pill:hover {
+  background-color: rgba(255, 200, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 200, 0, 0.1);
 }

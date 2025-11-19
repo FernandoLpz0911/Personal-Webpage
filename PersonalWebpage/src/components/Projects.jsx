@@ -1,28 +1,29 @@
+
 import React from 'react';
 import '../styles/Projects.css';
 
-// Mock Data
+// Resume Data
 const projects = [
   {
     id: 1,
-    title: "AI Resume Checker",
-    description: "An intelligent application that analyzes resumes against job descriptions using NLP to provide actionable feedback and scoring.",
-    techStack: ["React", "Python", "OpenAI API", "Tailwind"],
-    image: "https://picsum.photos/600/400?random=1"
+    title: "Smart Notes Multi-Platform App",
+    description: "A personalized, high-performance notes app MVP built in collaboration with other engineers. Features custom C++ conversion logic integrated with Flutter/Dart and Firebase, supporting seamless synchronization for 20,000+ daily edits.",
+    techStack: ["C++", "Dart", "Flutter", "Firebase"],
+    image: "https://picsum.photos/600/400?random=10" // Placeholder
   },
   {
     id: 2,
-    title: "Digital Watermark System",
-    description: "A security tool for photographers and artists to invisibly watermark their creations using generative adversarial networks.",
-    techStack: ["TypeScript", "TensorFlow.js", "Node.js"],
-    image: "https://picsum.photos/600/400?random=2"
+    title: "Digital Art Watermark",
+    description: "A verifiable permission system using Merkle Trees and Bloom Filters to provide tamper-proof image verification. Reduced hash lookup time to O(log n).",
+    techStack: ["React", "Django", "SQLite", "Algorithms"],
+    image: "https://picsum.photos/600/400?random=11" // Placeholder
   },
   {
     id: 3,
-    title: "E-Commerce Dashboard",
-    description: "A comprehensive analytics dashboard for online retailers featuring real-time data visualization and inventory management.",
-    techStack: ["Next.js", "D3.js", "Supabase"],
-    image: "https://picsum.photos/600/400?random=3"
+    title: "Dulce Tentaciones",
+    description: "Full-stack e-commerce platform for a startup bakery. Integrated Sanity CMS for dynamic content and Brevo for marketing, supporting 1,000+ monthly form submissions.",
+    techStack: ["React", "Sanity API", "Brevo", "CSS"],
+    image: "https://picsum.photos/600/400?random=12" // Placeholder
   }
 ];
 
@@ -32,7 +33,7 @@ const Projects = () => {
       <div className="container">
         <h2 className="section-title">
           <span className="section-line"></span>
-          Featured Projects
+          Selected Projects
         </h2>
         
         <div className="projects-grid">
@@ -45,7 +46,7 @@ const Projects = () => {
                   className="project-image"
                 />
                 <div className="project-overlay">
-                  <span className="view-project-btn">View Project</span>
+                  <span className="view-project-btn">View Details</span>
                 </div>
               </div>
               <div className="project-content">

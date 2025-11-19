@@ -27,16 +27,18 @@
 }
 
 .puzzle-piece.active {
-  fill: rgba(255, 200, 0, 0.05); 
-  stroke: #FFC800;
+  fill: rgba(255, 200, 0, 0.05); /* Dark Gold base */
+  stroke: #FFC800; /* Gold */
   stroke-width: 1.5;
   
+  /* The "Flow" Glow - Golden Aura */
   filter: drop-shadow(0 0 8px rgba(255, 200, 0, 0.6)) drop-shadow(0 0 15px rgba(255, 200, 0, 0.3));
   
   animation: flowPulse 3s infinite alternate ease-in-out;
   z-index: 10;
 }
 
+/* "Flow" Animation - Breathing/Surging effect */
 @keyframes flowPulse {
   0% {
     fill-opacity: 0.05;
@@ -55,9 +57,11 @@
   }
 }
 
+/* The Tunnel Vision Overlay */
 .puzzle-overlay {
   position: absolute;
   inset: 0;
+  /* Radial gradient creates the "Focus" / Tunnel vision effect - Darker for Black theme */
   background: radial-gradient(
     circle at center,
     rgba(5, 5, 5, 0.4) 0%,

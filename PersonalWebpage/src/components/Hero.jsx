@@ -1,3 +1,4 @@
+
 import React from 'react';
 import '../styles/Hero.css';
 
@@ -6,14 +7,15 @@ const Hero = () => {
     <section id="home" className="hero-section">
       <div className="hero-content">
         <div className="status-badge">
-          Available for hire
+          CS Student @ UIC '26
         </div>
         <h1 className="hero-title">
           Hi, I'm <span className="hero-highlight">Fernando Lopez</span>.
         </h1>
         <p className="hero-subtitle">
-          I am a Software Developer specializing in Front-end experiences.
-          Crafting AI-powered tools and seamless interfaces.
+          Software Engineer Architecting Scalable Systems.
+          <br />
+          Specializing in Full-Stack Development, Mobile Architecture, and Systems Programming (C++/ROS).
         </p>
         
         <div className="hero-actions">
