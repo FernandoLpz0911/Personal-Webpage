@@ -19,7 +19,7 @@ const Hero = () => {
         </p>
         
         <div className="hero-actions">
-          <a href="#projects" className="btn btn-primary">
+          <a href="#projects" className="btn btn-outline">
             View My Work
           </a>
           <a 
@@ -30,7 +30,7 @@ const Hero = () => {
           >
             Resume
           </a>
-          <a href="#contact" className="btn btn-secondary">
+          <a href="#contact" className="btn btn-outline">
             Contact Me
           </a>
         </div>
