@@ -1,9 +1,8 @@
 import React from 'react';
-import { Project } from '../types';
 import '../styles/Projects.css';
 
 // Mock Data
-const projects: Project[] = [
+const projects = [
   {
     id: 1,
     title: "AI Resume Checker",
@@ -27,7 +26,7 @@ const projects: Project[] = [
   }
 ];
 
-const Projects: React.FC = () => {
+const Projects = () => {
   return (
     <section id="projects" className="projects-section">
       <div className="container">

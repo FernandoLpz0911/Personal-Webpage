@@ -1,0 +1,106 @@
+:root {
+  /* Color Palette */
+  --color-bg: #020617; /* Slate 950 */
+  --color-surface: #0f172a; /* Slate 900 */
+  --color-surface-light: #1e293b; /* Slate 800 */
+  --color-border: #334155; /* Slate 700 */
+  
+  --color-text-primary: #e2e8f0; /* Slate 200 */
+  --color-text-secondary: #94a3b8; /* Slate 400 */
+  --color-text-muted: #64748b; /* Slate 500 */
+  
+  --color-brand-primary: #0ea5e9; /* Sky 500 */
+  --color-brand-hover: #0284c7; /* Sky 600 */
+  --color-brand-dark: #0c4a6e; /* Sky 900 */
+  --color-brand-glow: rgba(14, 165, 233, 0.2);
+
+  --color-success: #16a34a;
+  --color-error: #dc2626;
+
+  /* Typography */
+  --font-sans: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-container: 1152px; /* max-w-6xl equivalent */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted); 
+}
+
+/* Utilities */
+.container {
+  max-width: var(--spacing-container);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-line {
+  width: 3rem;
+  height: 1px;
+  background-color: var(--color-brand-primary);
+  display: block;
+}

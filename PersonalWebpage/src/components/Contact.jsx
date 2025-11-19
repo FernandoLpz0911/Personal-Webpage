@@ -2,17 +2,17 @@ import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 
-const Contact: React.FC = () => {
-  const form = useRef<HTMLFormElement>(null);
+const Contact = () => {
+  const form = useRef(null);
   const [buttonText, setButtonText] = useState('Send Message');
   const [isSending, setIsSending] = useState(false); 
-  const [messageStatus, setMessageStatus] = useState<'success' | 'fail' | null>(null);
+  const [messageStatus, setMessageStatus] = useState(null);
 
   useEffect(() => {
     emailjs.init('NKHVAqhW9gU2a16Ua'); 
   }, []);
 
-  const sendEmail = (e: React.FormEvent) => {
+  const sendEmail = (e) => {
     e.preventDefault();
 
     if (!form.current) return;

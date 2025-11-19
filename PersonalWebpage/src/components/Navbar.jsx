@@ -9,7 +9,7 @@ const navLinks = [
   { name: 'Contact', href: '#contact' },
 ];
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
           ))}
         </ul>
         <div className="mobile-menu-btn">
-           [Menu]
+           Menu
         </div>
       </div>
     </nav>

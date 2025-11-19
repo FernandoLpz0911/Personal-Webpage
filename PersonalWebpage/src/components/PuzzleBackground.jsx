@@ -3,13 +3,7 @@ import '../styles/PuzzleBackground.css';
 
 const PUZZLE_PATH = "M 25 25 L 42 25 C 42 18 58 18 58 25 L 75 25 L 75 42 C 82 42 82 58 75 58 L 75 75 L 58 75 C 58 82 42 82 42 75 L 25 75 L 25 58 C 18 58 18 42 25 42 Z";
 
-interface PieceProps {
-  x: number;
-  y: number;
-  delay: number;
-}
-
-const PuzzlePiece: React.FC<PieceProps> = ({ x, y, delay }) => {
+const PuzzlePiece = ({ x, y, delay }) => {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
@@ -31,7 +25,7 @@ const PuzzlePiece: React.FC<PieceProps> = ({ x, y, delay }) => {
   );
 };
 
-const PuzzleBackground: React.FC = () => {
+const PuzzleBackground = () => {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
