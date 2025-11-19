@@ -1,22 +1,43 @@
-import { Link } from 'react-router-dom';
-import '../components/cssfiles/Navbar.css';
-import ClickToggle  from './ClickToggle';
+import React, { useState, useEffect } from 'react';
+import '../styles/Navbar.css';
 
-const Navbar = ( {onNavigate}) => {
+const navLinks = [
+  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
+  { name: 'Projects', href: '#projects' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Contact', href: '#contact' },
+];
+
+const Navbar: React.FC = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-      
-        <div className="nav-links">
-          <Link to="/" className="nav-link"> Home </Link>
-          <Link to="/Projects" className="nav-link"> Projects </Link>
-          <Link to="/Experience" className="nav-link"> Experience </Link>
-          <Link to="/DevBlogs" className="nav-link"> Dev Blogs </Link>
-          <Link to="/About" className="nav-link"> About Me </Link>
-          <Link to="/Contact" className="nav-link"> Contact </Link>
-          <ClickToggle/>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <div className="nav-container">
+        <div className="nav-logo">
+          FL<span>.</span>
         </div>
-        
+        <ul className="nav-menu">
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <a href={link.href} className="nav-link">
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="mobile-menu-btn">
+           [Menu]
+        </div>
       </div>
     </nav>
   );
