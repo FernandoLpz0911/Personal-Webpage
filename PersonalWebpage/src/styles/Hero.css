@@ -60,6 +60,7 @@
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+  align-items: center; /* Ensure buttons are centered on mobile */
   animation: slideUp 0.8s ease-out forwards;
   animation-delay: 400ms;
   opacity: 0;
@@ -71,6 +72,8 @@
   font-weight: 600;
   transition: all 0.2s ease;
   display: inline-block;
+  text-align: center;
+  min-width: 160px; /* Consistent width */
 }
 
 .btn-primary {
@@ -94,6 +97,19 @@
   background-color: var(--color-border);
   transform: scale(1.05);
   border-color: var(--color-text-muted);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-brand-primary);
+  border: 2px solid var(--color-brand-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-brand-primary);
+  color: #000;
+  box-shadow: 0 0 15px var(--color-brand-glow);
+  transform: scale(1.05);
 }
 
 @media (min-width: 768px) {

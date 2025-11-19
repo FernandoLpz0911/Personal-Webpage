@@ -1,5 +1,4 @@
 
-
 import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
 import '../styles/Navbar.css';
@@ -9,6 +8,7 @@ const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
+  { name: 'Resume', href: '/resume.pdf' }, // Link to resume
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -32,7 +32,11 @@ const Navbar = () => {
         <ul className="nav-menu">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a href={link.href} className="nav-link">
+              <a 
+                href={link.href} 
+                className="nav-link"
+                {...(link.href.endsWith('.pdf') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+              >
                 {link.name}
               </a>
             </li>

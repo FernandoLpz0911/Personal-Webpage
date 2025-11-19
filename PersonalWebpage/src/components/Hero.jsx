@@ -7,10 +7,10 @@ const Hero = () => {
     <section id="home" className="hero-section">
       <div className="hero-content">
         <div className="status-badge">
-          Computer Science Student @ UIC
+          CS Student @ UIC '26
         </div>
         <h1 className="hero-title">
-          Hello, I'm <span className="hero-highlight">Fernando Lopez</span>.
+          Hi, I'm <span className="hero-highlight">Fernando Lopez</span>.
         </h1>
         <p className="hero-subtitle">
           Software Engineer Architecting Scalable Systems.
@@ -21,6 +21,14 @@ const Hero = () => {
         <div className="hero-actions">
           <a href="#projects" className="btn btn-primary">
             View My Work
+          </a>
+          <a 
+            href="/resume.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn btn-outline"
+          >
+            Resume
           </a>
           <a href="#contact" className="btn btn-secondary">
             Contact Me
