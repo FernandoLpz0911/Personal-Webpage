@@ -9,7 +9,6 @@ const navLinks = [
   { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
   { name: 'Contact', href: '#contact' },
-  { name: 'Resume', href: '/resume.pdf' },
 ];
 
 const Navbar = () => {
