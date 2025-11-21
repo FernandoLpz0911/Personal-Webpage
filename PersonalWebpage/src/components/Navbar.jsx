@@ -8,8 +8,8 @@ const navLinks = [
   { name: 'About', href: '#about' },
   { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Resume', href: '/resume.pdf' }, // Link to resume
   { name: 'Contact', href: '#contact' },
+  { name: 'Resume', href: '/resume.pdf' },
 ];
 
 const Navbar = () => {
