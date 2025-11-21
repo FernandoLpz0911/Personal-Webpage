@@ -44,9 +44,7 @@ const Projects = () => {
                   alt={project.title} 
                   className="project-image"
                 />
-                <div className="project-overlay">
-                  <span className="view-project-btn">View Details</span>
-                </div>
+
               </div>
               <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
