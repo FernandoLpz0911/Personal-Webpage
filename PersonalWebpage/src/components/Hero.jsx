@@ -12,7 +12,7 @@ const Hero = () => {
         <p className="hero-subtitle">
           Software Engineer Architecting Scalable Systems.
           <br />
-          Specializing in xxx
+          Specializing in Full-Stack Development, AI Integration, and Cloud Architecture.
         </p>
         
         <div className="hero-actions">

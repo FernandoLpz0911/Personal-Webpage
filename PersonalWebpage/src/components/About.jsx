@@ -2,8 +2,9 @@ import React from 'react';
 import '../styles/About.css';
 
 const skills = [
-  "Python", "C++", "JavaScript", "Golang", "Java", "React", "Django", 
-  "Flutter", "ROS", "Git", "Linux", "SQL", "Firebase", "Sanity API"
+  "Python", "C++", "JavaScript", "Go", "Java", "SQL",
+  "React", "Django", "Flutter", "Docker", "Kubernetes",
+  "PostgreSQL", "Firebase", "LangChain", "WatsonX"
 ];
 
 const coursework = [
@@ -26,8 +27,7 @@ const About = () => {
               Unlike typical front-end developers, my expertise spans deep into systems programming, complex algorithms, and hardware integration.
             </p>
             <p>
-              Currently, I serve on the <strong>NASA Lunabotics Team</strong>, designing control logic for lunar rovers using ROS and C++. 
-              I thrive in environments where efficiency, security, and scalability are paramount.
+              Currently, I am in the process of developing more AI knowledge in regards to cybersecurity and utilization.
             </p>
 
             <div className="education-block">
@@ -42,7 +42,7 @@ const About = () => {
             </div>
             
             <div className="skills-container">
-               <h3 className="skills-title">Technical Arsenal</h3>
+               <h3 className="skills-title">Technical Skills</h3>
                <div className="skills-grid">
                  {skills.map(skill => (
                    <span key={skill} className="skill-pill">{skill}</span>
