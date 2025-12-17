@@ -39,13 +39,12 @@ const Projects = () => {
         
         <div className="projects-grid">
           {projects.map((project) => (
-            // 💡 Change the div to an <a> tag here
             <a 
               key={project.id} 
-              href={project.link} // 💡 Apply the link here
-              target="_blank" // 💡 Recommended: Opens link in a new tab
-              rel="noopener noreferrer" // 💡 Recommended: Security best practice
-              className="project-card" // 💡 Apply your card styling here
+              href={project.link} // 💡 linking here
+              target="_blank" // 💡 links in new tab
+              rel="noopener noreferrer"
+              className="project-card" // 💡 card styling
             >
               <div className="project-image-container">
                 <img 
@@ -68,7 +67,7 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </a> // 💡 Close the <a> tag
+            </a>
           ))}
         </div>
       </div>

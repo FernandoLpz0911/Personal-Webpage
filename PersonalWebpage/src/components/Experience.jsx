@@ -4,44 +4,44 @@ import '../styles/Experience.css';
 const experiences = [
   {
     id: 1,
-    role: "Control Systems Team Member",
-    company: "NASA Lunabotics Team (UIC)",
-    period: "Sep 2025 - Present",
-    description: [
-      "Designing a lunar robot prototype for the Artemis Mission, focusing on dust tolerance and autonomy.",
-      "Engineered C++ control logic and data transmission systems restricted to 4 kbps using H.265 encoding.",
-      "Developing pathfinding algorithms using ROS and LiDaR for autonomous visual mapping."
-    ]
-  },
-  {
-    id: 2,
-    role: "Program Trainer",
-    company: "Compudopt",
-    period: "Aug 2024 - Feb 2025",
-    description: [
-      "Taught elementary to middle school students computer software, hardware, and coding concepts.",
-      "Expanded digital literacy and fostered problem-solving skills in a classroom setting.",
-      "Demonstrated strong communication skills by breaking down complex technical topics for non-technical audiences."
-    ]
-  },
-  {
-    id: 3,
     role: "Aspire To Inspire Mentor",
     company: "Women in Computer Science",
     period: "Sep 2025 - Present",
     description: [
-      "Mentoring students in full-stack web architecture and AWS deployment strategies.",
-      "Architecting a real-time chat application using Django and React to demonstrate complex backend integration."
+      "Led and guided two students through the development of personal web portfolios, advising on design, architecture, and deployment best practices.",
+      "Coordinated a collaborative team of four (two mentors, two mentees) to architect a real-time chatting application using Django and React.",
+      "Defined the initial scope and strategy for implementing AWS deployment and future cross-platform expansion to mobile.",
+      "Communicated technical insights and networking strategies, fostering a supportive environment."
     ]
   },
   {
-    id: 4,
+    id: 2,
     role: "Event Security",
     company: "Monterrey Security",
     period: "Jun 2025 - Present",
     description: [
-      "Coordinating with security teams to maintain safety for large-scale events with 63,500+ patrons.",
-      "Demonstrating reliability, conflict resolution, and situational awareness in high-pressure environments."
+      "Coordinated logistics for large-scale events (60k+ patrons), collaborating with distributed teams to resolve critical incidents and ensure operational safety."
+    ]
+  },
+  {
+    id: 3,
+    role: "Freelance Software Engineer",
+    company: "Dulce Tentaciones",
+    period: "Jun 2025 - Aug 2025",
+    description: [
+      "Directed the full SDLC for a local startup, delivering a responsive React application from requirements to deployment.",
+      "Engineered a scalable marketing pipeline using Brevo and EmailJS, capable of processing 1,000+ monthly customer orders without manual intervention.",
+      "Integrated Sanity CMS to enable non-technical content updates, reducing developer maintenance time by 100%."
+    ]
+  },
+  {
+    id: 4,
+    role: "Program Trainer",
+    company: "Compudopt",
+    period: "Aug 2024 - Feb 2025",
+    description: [
+      "Translated complex programming paradigms into accessible K-8 curriculum, covering foundational logic such as loops, control flow, and variable types to build technical literacy for 20+ students per semester.",
+      "Directed hands-on engineering workshops utilizing microcontrollers (Arduino) and circuit logic to foster early proficiency in embedded systems and real-world software use cases."
     ]
   }
 ];
