@@ -10,7 +10,7 @@ const Contact = () => {
   const [messageStatus, setMessageStatus] = useState(null);
 
   useEffect(() => {
-    emailjs.init(VITE_EMAILJS_PUBLIC_KEY); 
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY); 
   }, []);
 
   const sendEmail = (e) => {
@@ -22,7 +22,7 @@ const Contact = () => {
     setButtonText('Sending...');
     setMessageStatus(null);
 
-    emailjs.sendForm(VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, form.current)
+    emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current)
       .then(
         () => {
           console.log('SUCCESS!');
