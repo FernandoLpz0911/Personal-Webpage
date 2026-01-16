@@ -10,7 +10,7 @@ const Contact = () => {
   const [messageStatus, setMessageStatus] = useState(null);
 
   useEffect(() => {
-    emailjs.init('NKHVAqhW9gU2a16Ua'); 
+    emailjs.init(VITE_EMAILJS_PUBLIC_KEY); 
   }, []);
 
   const sendEmail = (e) => {
@@ -22,7 +22,7 @@ const Contact = () => {
     setButtonText('Sending...');
     setMessageStatus(null);
 
-    emailjs.sendForm('service_f0hirps', 'template_o5kw3t2', form.current)
+    emailjs.sendForm(VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, form.current)
       .then(
         () => {
           console.log('SUCCESS!');
