@@ -1,45 +1,83 @@
-# Personal-Webpage
+# Fernando Lopez - Personal Portfolio
+A responsive single-page application (SPA) designed to showcase software engineering projects and technical experience. Built with React and Vite, this project emphasizes component modularity, custom CSS architecture, and serverless integrations.
 
-page that begins at a home page. the style will be generally straightforward.
+# Key Features
+Dynamic Background System: Implements a custom PuzzleBackground component using SVG paths and probabilistic rendering loops to create organic, non-deterministic animations.
 
-Page will include
-- Projects that show a thumbnail of the project, allowing to see code snippets of the project, allowing to see a demo of the project, and to see the related skills and the description of the project
-- About Me showing a showcase image of the project and 
-- Developer Blogs of projects connected to the projects
-- Contact Me page utilizing EmailJS, with additional card showing my linkedin, github, and email
-- Technical Skills w onClick showing where I've utilized that skill and how
-- Experiences with a tag towards technical skills
+Serverless Contact Form: Integrated with EmailJS to handle form submissions directly from the client side, managing loading states and success/failure feedback loops without a dedicated backend.
 
-Navbar including buttons to
-- Projects
-- Experiences
-- DevBlogs
-- About Me
-- Contact Me
+Custom Design System: Utilizes a centralized CSS variable strategy (global.css) for consistent theming across typography, spacing, and the specific "Carbon & Gold" color palette.
 
-Project Page
-- Cards that show a thumbnail of the project, description of the project, some code snippets, a demo, and DevBlogs correlated with the Project
+Responsive Architecture: fluid layout adapters for mobile and desktop viewports, managed via native CSS media queries and React state listeners.
 
-Experiences
-- Cards the show the title of the position, dates of the position, Name of place/business, description of position, and the tags correlating to the technical skills
-- Uses Sanity API for content management
+Tech Stack
+Core: React 18+
 
-Technical Skills
-- Uses Sanity API for content management
-- Shows my known programming languages
-- Shows my known frameworks
-- Shows my known tools
+Build Tool: Vite
 
-DevBlogs
-- Uses Sanity API for content management
+Styling: CSS3 (Variables, Flexbox, Grid, Keyframe Animations)
 
+Services: EmailJS (Form Handling)
 
-About Me
-- Uses Sanity API for content management
-- Explains my past with relevance to computer science
-- Explains my current situation in regards to what I'm doing to further myself short-term and generally longer term.
-- Explains my future outlooks in what my long-term goals are.
+# Installation & Setup
+Clone the repository
 
-Contact Me
-- Uses EmailJS for contact form
-- Contact me page for people to come into contact with me based on whatever they'd like with my linkedin, github, and mobile cell number
+'''
+Bash
+
+git clone https://github.com/FernandoLpz0911/portfolio.git
+cd portfolio
+Install dependencies
+'''
+
+'''
+Bash
+
+npm install
+Run the development environment
+'''
+
+'''
+Bash
+
+npm run dev
+Build for production
+'''
+
+'''
+Bash
+
+npm run build
+'''
+
+# Configuration
+EmailJS Integration
+The contact form logic is located in src/components/Contact.jsx. To connect a custom EmailJS account:
+
+Update the service_id, template_id, and public key in the sendEmail function and emailjs.init call.
+
+(Recommended) Move these credentials to a .env file for security before public deployment.
+
+# Project Structure
+
+'''
+Plaintext
+
+src/
+├── assets/          # Static media assets
+├── components/      # Functional React components
+│   ├── Contact.jsx  # Form logic and validation
+│   ├── Experience.jsx # Timeline visualization
+│   ├── PuzzleBackground.jsx # SVG animation logic
+│   └── ...
+├── styles/          # Stylesheets
+│   ├── global.css   # Root variables and reset
+│   ├── App.css      # Layout scaffolding
+│   └── ...
+├── App.jsx          # Main application composition
+└── main.jsx         # DOM entry point
+
+'''
+
+# License
+Distributed under the MIT License.
