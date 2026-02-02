@@ -1,91 +1,46 @@
-import React from 'react';
 import '../styles/Experience.css';
 
 const experiences = [
   {
-  id: 0,
-  role: "Medical Research Assistant",
-  company: "University of Illinois Chicago (UIC)",
-  period: "Jan 2026 - Present",
-  description: [
-    "Optimized database architecture using Firebase, reducing database read/writes by approximately 98% through efficient indexing and query restructuring.",
-    "Architected and deployed Voxylex AI, a full-stack application utilizing speech analysis algorithms to analyze patient data for medical research.",
-    "Standardized development workflows by leading peer code reviews and improving codebase maintainability.",
-    "Developed a centralized error-logging wrapper, reducing boilerplate code by approximately 20% per file."
-  ]
-  },
-  {
-    id: 1,
-    role: "Aspire To Inspire Mentor",
-    company: "Women in Computer Science",
-    period: "Sep 2025 - Present",
-    description: [
-      "Led and guided two students through the development of personal web portfolios, advising on design, architecture, and deployment best practices.",
-      "Coordinated a collaborative team of four (two mentors, two mentees) to architect a real-time chatting application using Django and React.",
-      "Defined the initial scope and strategy for implementing AWS deployment and future cross-platform expansion to mobile.",
-      "Communicated technical insights and networking strategies, fostering a supportive environment."
+    role: "Medical Research Assistant",
+    company: "University of Illinois Chicago",
+    period: "Jan 2026 — Present",
+    details: [
+      "Optimized database architecture using Firebase, reducing read/writes by 98%.",
+      "Architected Voxylex AI: a full-stack speech analysis application for patient data.",
+      "Standardized development workflows and led peer code reviews.",
+      "Developed a centralized error-logging wrapper, reducing boilerplate by 20%."
     ]
   },
   {
-    id: 2,
-    role: "Event Security",
-    company: "Monterrey Security",
-    period: "Jun 2025 - Present",
-    description: [
-      "Coordinated logistics for large-scale events (60k+ patrons), collaborating with distributed teams to resolve critical incidents and ensure operational safety."
-    ]
-  },
-  {
-    id: 3,
-    role: "Freelance Software Engineer",
-    company: "Dulce Tentaciones",
-    period: "Jun 2025 - Aug 2025",
-    description: [
-      "Directed the full SDLC for a local startup, delivering a responsive React application from requirements to deployment.",
-      "Engineered a scalable marketing pipeline using Brevo and EmailJS, capable of processing 1,000+ monthly customer orders without manual intervention.",
-      "Integrated Sanity CMS to enable non-technical content updates, reducing developer maintenance time by 100%."
-    ]
-  },
-  {
-    id: 4,
-    role: "Program Trainer",
-    company: "Compudopt",
-    period: "Aug 2024 - Feb 2025",
-    description: [
-      "Translated complex programming paradigms into accessible K-8 curriculum, covering foundational logic such as loops, control flow, and variable types to build technical literacy for 20+ students per semester.",
-      "Directed hands-on engineering workshops utilizing microcontrollers (Arduino) and circuit logic to foster early proficiency in embedded systems and real-world software use cases."
+    role: "AI Engineer Intern Applicant",
+    company: "Acentra",
+    period: "Nov 2025",
+    details: [
+      "Applied focused engineering principles to AI integration challenges.",
+      "Demonstrated capability in large-scale system logic."
     ]
   }
 ];
 
 const Experience = () => {
   return (
-    <section id="experience" className="experience-section">
-      <div className="container">
-        <h2 className="section-title">
-          <span className="section-line"></span>
-          Experience
-        </h2>
-        
-        <div className="timeline">
-          {experiences.map((exp) => (
-            <div key={exp.id} className="timeline-item">
-              <div className="timeline-marker"></div>
-              <div className="timeline-content">
-                <div className="timeline-header">
-                  <h3 className="exp-role">{exp.role}</h3>
-                  <span className="exp-period">{exp.period}</span>
-                </div>
-                <h4 className="exp-company">{exp.company}</h4>
-                <ul className="exp-list">
-                  {exp.description.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-              </div>
+    <section id="experience" className="section-container">
+      <h3 className="section-header">02. PROFESSIONAL HISTORY</h3>
+      <div className="experience-list">
+        {experiences.map((exp, index) => (
+          <div key={index} className="experience-item">
+            <div className="exp-header">
+              <h4 className="exp-role">{exp.role} <span className="at-symbol">//</span> {exp.company}</h4>
+              <span className="exp-period">{exp.period}</span>
             </div>
-          ))}
-        </div>
+            <ul className="exp-details">
+              {exp.details.map((detail, idx) => (
+                <li key={idx}>{detail}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );

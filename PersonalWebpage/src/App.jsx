@@ -1,38 +1,23 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
-import Experience from './components/Experience';
-import PuzzleBackground from './components/PuzzleBackground';
-import Logo from './components/Logo';
 import './styles/App.css';
 
 function App() {
   return (
-    <main className="app-main">
-      {/* Dynamic Puzzle Background Layer */}
-      <PuzzleBackground />
-
-      {/* Content Layer */}
+    <div className="app-container">
       <Navbar />
-      
-      <div className="content-layer">
+      <main className="main-content">
         <Hero />
         <About />
         <Experience />
         <Projects />
         <Contact />
-      </div>  
-
-      <footer className="app-footer">
-        <div className="footer-logo">
-          <Logo width={50} height={50} />
-        </div>
-        <p>&copy; {new Date().getFullYear()} Fernando Lopez. All rights reserved.</p>
-      </footer>
-    </main>
+      </main>
+    </div>
   );
 }
 
