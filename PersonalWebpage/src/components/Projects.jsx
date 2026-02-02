@@ -34,6 +34,14 @@ const projects = [
     image: "RAGAssistant.png", 
     link: "https://ibm-ai-manual-summarizer-and-upload.vercel.app/",
   },
+  {
+  id: 5,
+  title: "IoT Smart Home System",
+  description: "Developed a smart home ecosystem integrating real-time motion lighting and sensors. Built a wireless network connecting Arduinos via ESP32 and Blynk, boosting performance by 75% using non-blocking I/O.",
+  techStack: ["C++", "Arduino IDE", "ESP32", "IoT"],
+  image: "SmartHome.png",
+  link: "https://github.com/FernandoLpz0911/Smart-Home-Project",
+}
 ];
 
 const Projects = () => {

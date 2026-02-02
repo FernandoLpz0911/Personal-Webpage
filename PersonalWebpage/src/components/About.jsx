@@ -4,10 +4,11 @@ import '../styles/About.css';
 const skills = [
   "Python", "C++", "JavaScript", "Go", "Java", "SQL",
   "React", "Django", "Flutter", "Docker", "Kubernetes",
-  "PostgreSQL", "Firebase", "LangChain", "WatsonX"
+  "PostgreSQL", "Firebase", "LangChain", "WatsonX", "Agile"
 ];
 
 const coursework = [
+  "Artificial Intelligence",
   "Data Structures", "Machine Organization", "Languages & Automata", 
   "Programming Language Design", "Math Foundations of Computing"
 ];

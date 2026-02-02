@@ -3,6 +3,18 @@ import '../styles/Experience.css';
 
 const experiences = [
   {
+  id: 0,
+  role: "Medical Research Assistant",
+  company: "University of Illinois Chicago (UIC)",
+  period: "Jan 2026 - Present",
+  description: [
+    "Optimized database architecture using Firebase, reducing database read/writes by approximately 98% through efficient indexing and query restructuring.",
+    "Architected and deployed Voxylex AI, a full-stack application utilizing speech analysis algorithms to analyze patient data for medical research.",
+    "Standardized development workflows by leading peer code reviews and improving codebase maintainability.",
+    "Developed a centralized error-logging wrapper, reducing boilerplate code by approximately 20% per file."
+  ]
+  },
+  {
     id: 1,
     role: "Aspire To Inspire Mentor",
     company: "Women in Computer Science",
