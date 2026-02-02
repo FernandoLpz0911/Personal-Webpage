@@ -24,11 +24,11 @@ const About = () => {
         <div className="about-content-wrapper">
           <div className="about-text">
             <p>
-              I am a Junior Computer Science student at <strong>UIC</strong> with a deep desire for learning and relentless self-improvement. 
+              I am a Senior Computer Science student at <strong>UIC</strong> with a deep desire for learning and relentless self-improvement. 
               Unlike typical front-end developers, my expertise spans deep into systems programming, complex algorithms, and hardware integration.
             </p>
             <p>
-              Currently, I am in the process of developing more AI knowledge in regards to cybersecurity and utilization.
+              Currently, I am in the process of developing medical software for the Sanchez Lab at University of Illinois at Chicago
             </p>
 
             <div className="education-block">
