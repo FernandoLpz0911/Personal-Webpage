@@ -1,49 +1,59 @@
-.experience-item {
-  margin-bottom: 4rem;
-  border-left: 2px solid var(--border-color);
-  padding-left: 1.5rem;
-  transition: border-color 0.3s ease;
+.section-block {
+  padding: 6rem 0;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.experience-item:hover {
-  border-left-color: var(--accent);
+.meta-label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--accent-gold);
+  margin-bottom: 3rem;
+  display: block;
+  border-bottom: 1px solid var(--accent-dim);
+  padding-bottom: 1rem;
 }
 
-.exp-header {
+.history-header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
   align-items: baseline;
-}
-
-.exp-role {
-  font-family: var(--font-header);
-  font-size: 1.5rem;
-}
-
-.at-symbol {
-  color: var(--accent);
-  font-size: 1rem;
-  margin: 0 0.5rem;
-}
-
-.exp-period {
-  font-family: var(--font-body);
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-}
-
-.exp-details {
-  list-style: none;
-}
-
-.exp-details li {
   margin-bottom: 0.5rem;
-  color: var(--text-secondary);
-  font-size: 1rem;
 }
 
-.exp-details li::before {
+.history-header h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+}
+
+.date-stamp {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  color: var(--accent-gold);
+}
+
+.institution {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.history-list {
+  list-style: none;
+  border-left: 1px solid var(--accent-dim);
+  padding-left: 1.5rem;
+}
+
+.history-list li {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+
+.history-list li::before {
   content: "— ";
-  color: var(--accent);
+  color: var(--accent-gold);
+  margin-right: 0.5rem;
 }

@@ -1,21 +1,29 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import Hero from './components/Hero'; // Renamed to "Introduction" visually
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 import './styles/App.css';
 
 function App() {
   return (
-    <div className="app-container">
-      <Navbar />
-      <main className="main-content">
+    <div className="layout-split">
+      {/* The Pillar (Fixed Left) */}
+      <aside className="layout-sidebar">
+        <Sidebar />
+      </aside>
+
+      {/* The Manuscript (Scrollable Right) */}
+      <main className="layout-content">
         <Hero />
-        <About />
         <Experience />
         <Projects />
-        <Contact />
+        
+        {/* Simple Footer built into flow */}
+        <div className="heavy-divider"></div>
+        <footer className="footer-signature">
+          <p>© 2026 Fernando Lopez. University of Illinois Chicago.</p>
+        </footer>
       </main>
     </div>
   );

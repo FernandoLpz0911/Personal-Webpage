@@ -1,21 +1,25 @@
+import React from 'react';
 import '../styles/Hero.css';
 
 const Hero = () => {
   return (
-    <section id="hero" className="section-container hero-section">
-      <div className="hero-content">
-        <p className="overline">EST. 2026 // CHICAGO, IL</p>
-        <h1 className="name-title">FERNANDO LOPEZ</h1>
-        <h2 className="role-title">Architecting Scalable Systems & <br/>Pursuing Physical Perfection.</h2>
-        
-        <div className="manifesto">
-          <p>
-            I operate at the intersection of high-performance computing and individual optimization. 
-            My work is defined not by the languages I use, but by the efficiency of the systems I architect.
-            Whether minimizing database reads by 98% or refining physique aesthetics, the goal is identical:
-            <span className="accent-text"> Absolute elimination of waste.</span>
-          </p>
-        </div>
+    <section id="abstract" className="section-block hero-padding">
+      <p className="meta-label">01 — ABSTRACT</p>
+      
+      <h2 className="thesis-statement">
+        I engineer systems that enforce order upon chaos.
+        My practice focuses on high-performance architecture, 
+        algorithmic efficiency, and the "Toji" principle of 
+        physical and digital optimization.
+      </h2>
+      
+      <div className="academic-bio">
+        <p>
+          Currently reading Computer Science at the <span className="gold-text">University of Illinois Chicago</span> (Class of 2026).
+          Specializing in scalable backend logic, speech analysis algorithms, and 
+          distributed IoT networks. My approach is defined not by the breadth of tools used,
+          but by the depth of control maintained over the system.
+        </p>
       </div>
     </section>
   );

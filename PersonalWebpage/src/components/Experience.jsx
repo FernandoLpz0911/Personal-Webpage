@@ -1,46 +1,55 @@
+import React from 'react';
 import '../styles/Experience.css';
-
-const experiences = [
-  {
-    role: "Medical Research Assistant",
-    company: "University of Illinois Chicago",
-    period: "Jan 2026 — Present",
-    details: [
-      "Optimized database architecture using Firebase, reducing read/writes by 98%.",
-      "Architected Voxylex AI: a full-stack speech analysis application for patient data.",
-      "Standardized development workflows and led peer code reviews.",
-      "Developed a centralized error-logging wrapper, reducing boilerplate by 20%."
-    ]
-  },
-  {
-    role: "AI Engineer Intern Applicant",
-    company: "Acentra",
-    period: "Nov 2025",
-    details: [
-      "Applied focused engineering principles to AI integration challenges.",
-      "Demonstrated capability in large-scale system logic."
-    ]
-  }
-];
 
 const Experience = () => {
   return (
-    <section id="experience" className="section-container">
-      <h3 className="section-header">02. PROFESSIONAL HISTORY</h3>
-      <div className="experience-list">
-        {experiences.map((exp, index) => (
-          <div key={index} className="experience-item">
-            <div className="exp-header">
-              <h4 className="exp-role">{exp.role} <span className="at-symbol">//</span> {exp.company}</h4>
-              <span className="exp-period">{exp.period}</span>
-            </div>
-            <ul className="exp-details">
-              {exp.details.map((detail, idx) => (
-                <li key={idx}>{detail}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+    <section id="history" className="section-block">
+      <p className="meta-label">02 — PROFESSIONAL HISTORY</p>
+      
+      {/* Role 1 - UIC */}
+      <div className="history-block">
+        <div className="history-header">
+          <h3>Medical Research Assistant</h3>
+          <span className="date-stamp">Jan 2026 — Present</span>
+        </div>
+        <h4 className="institution">University of Illinois Chicago (UIC)</h4>
+        <ul className="history-list">
+          <li>Optimized database architecture using Firebase, reducing database read/writes by approximately 98% through efficient indexing and query restructuring.</li>
+          <li>Architected and deployed <em>Voxylex AI</em>, a full-stack application utilizing speech analysis algorithms to analyze patient data for medical research.</li>
+          <li>Standardized development workflows by leading peer code reviews and improving codebase maintainability.</li>
+          <li>Developed a centralized error-logging wrapper, reducing boilerplate code by 20% per file.</li>
+        </ul>
+      </div>
+
+      <div className="gold-divider"></div>
+
+      {/* Role 2 - Dulce Tentaciones */}
+      <div className="history-block">
+        <div className="history-header">
+          <h3>Freelance Software Engineer</h3>
+          <span className="date-stamp">Jun 2025 — Aug 2025</span>
+        </div>
+        <h4 className="institution">Dulce Tentaciones</h4>
+        <ul className="history-list">
+          <li>Directed the full SDLC for a local startup, delivering a responsive React application.</li>
+          <li>Engineered a scalable marketing pipeline using Brevo and EmailJS to process 1,000+ monthly orders.</li>
+          <li>Integrated Sanity CMS to enable non-technical content updates, reducing maintenance time by 100%.</li>
+        </ul>
+      </div>
+
+      <div className="gold-divider"></div>
+
+      {/* Role 3 - Compudopt */}
+      <div className="history-block">
+        <div className="history-header">
+          <h3>Program Teacher</h3>
+          <span className="date-stamp">Aug 2024 — Feb 2025</span>
+        </div>
+        <h4 className="institution">Compudopt Inc.</h4>
+        <ul className="history-list">
+          <li>Translated complex programming paradigms into K-8 curriculum (loops, control flow).</li>
+          <li>Directed hands-on engineering workshops utilizing Arduino microcontrollers and circuit logic.</li>
+        </ul>
       </div>
     </section>
   );
