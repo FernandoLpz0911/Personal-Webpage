@@ -27,7 +27,7 @@ const Hero = () => {
           >
             Resume
           </a>
-          <a href="    ---------------------------------------------------------" className="btn btn-outline">
+          <a href="mailto:flope8@uic.edu" className="btn btn-outline">
             Contact Me
           </a>
         </div>
