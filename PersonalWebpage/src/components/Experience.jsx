@@ -63,7 +63,6 @@ const Experience = () => {
     <section id="experience" className="experience-section">
       <div className="container">
         <h2 className="section-title">
-          <span className="section-line"></span>
           Experience
         </h2>
         
