@@ -15,16 +15,10 @@ function App() {
       <Navbar />
       <div className="content-layer">
         <Hero />
-        <About />
-        <Experience />
         <Projects />
+        <Experience />
+        <About />
       </div>  
-      <footer className="app-footer">
-        <div className="footer-logo">
-          <Logo width={50} height={50} />
-        </div>
-        <p>&copy; {new Date().getFullYear()} Fernando Lopez. All rights reserved.</p>
-      </footer>
     </main>
   );
 }

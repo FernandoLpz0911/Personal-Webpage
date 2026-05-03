@@ -50,7 +50,7 @@ const Projects = () => {
       <div className="container">
         <h2 className="section-title">
           <span className="section-line"></span>
-          Selected Projects
+          Projects
         </h2>
         
         <div className="projects-grid">
