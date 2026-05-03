@@ -11,20 +11,15 @@ const PuzzlePiece = ({ x, y, delay }) => {
     let timeoutId;
 
     const runLoop = () => {
-      // Higher chance to be active (0.6) to create "clusters" of flow
       const isActive = Math.random() > 0.85; 
       setActive(isActive);
       
-      // Random duration between updates: 1s to 4s
-      // This makes it feel more organic/monster-like than mechanical
       const nextTime = 1000 + Math.random() * 3000;
       timeoutId = setTimeout(runLoop, nextTime);
     };
 
-    // Initial random delay to desynchronize the grid
     const initialTimeout = setTimeout(() => {
       
-      // erratic heartbeat interval
       timeoutId = setTimeout(runLoop, Math.random() * 2000);
       
     }, delay * 1000);
@@ -38,8 +33,6 @@ const PuzzlePiece = ({ x, y, delay }) => {
   return (
     <path
       d={PUZZLE_PATH}
-      // Pass x and y as CSS variables if needed for advanced transforms, 
-      // currently applied directly via transform prop
       transform={`translate(${x}, ${y}) scale(1.5)`}
       className={`puzzle-piece ${active ? 'active' : 'inactive'}`}
     />

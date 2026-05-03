@@ -24,7 +24,7 @@
 
 .timeline-marker {
   position: absolute;
-  left: -2.43rem; /* Adjust to center on line */
+  left: -2.43rem;
   top: 0.25rem;
   width: 0.875rem;
   height: 0.875rem;

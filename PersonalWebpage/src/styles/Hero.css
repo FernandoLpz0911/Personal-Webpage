@@ -11,7 +11,7 @@
 .hero-content {
   position: relative;
   z-index: 10;
-  max-width: 56rem; /* max-w-4xl */
+  max-width: 56rem;
   margin: 0 auto;
   padding: 0 1.5rem;
   text-align: center;
@@ -40,7 +40,7 @@
 }
 
 .hero-highlight {
-  background: linear-gradient(to right, var(--color-brand-primary), #FFA500); /* Gold to Orange */
+  background: linear-gradient(to right, var(--color-brand-primary), #FFA500); /* this is where the magic transition happens lol*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -52,7 +52,7 @@
   margin: 0 auto 2.5rem auto;
   animation: slideUp 0.8s ease-out forwards;
   animation-delay: 200ms;
-  opacity: 0; /* Start hidden for animation */
+  opacity: 0;
 }
 
 .hero-actions {
@@ -60,7 +60,7 @@
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
-  align-items: center; /* Ensure buttons are centered on mobile */
+  align-items: center;
   animation: slideUp 0.8s ease-out forwards;
   animation-delay: 400ms;
   opacity: 0;
@@ -73,7 +73,7 @@
   transition: all 0.2s ease;
   display: inline-block;
   text-align: center;
-  min-width: 160px; /* Consistent width */
+  min-width: 160px;
 }
 
 .btn-outline {

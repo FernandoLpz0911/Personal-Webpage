@@ -12,7 +12,6 @@ const Logo = ({ width = 60, height = 60, className = "" }) => {
       className={className}
       aria-label="Fernando Lopez Logo"
     >
-      {/* Hexagon Border - Gold Stroke */}
       <path 
         d="M50 5 L93.3 27.5 V72.5 L50 95 L6.7 72.5 V27.5 Z" 
         stroke="#FFC800" 
@@ -20,7 +19,6 @@ const Logo = ({ width = 60, height = 60, className = "" }) => {
         fill="rgba(255, 200, 0, 0.05)" 
       />
       
-      {/* Inner Initials */}
       <text 
         x="50" 
         y="62" 

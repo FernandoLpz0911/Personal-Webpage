@@ -12,12 +12,8 @@ import './styles/App.css';
 function App() {
   return (
     <main className="app-main">
-      {/* Dynamic Puzzle Background Layer */}
       <PuzzleBackground />
-
-      {/* Content Layer */}
       <Navbar />
-      
       <div className="content-layer">
         <Hero />
         <About />
@@ -25,7 +21,6 @@ function App() {
         <Projects />
         <Contact />
       </div>  
-
       <footer className="app-footer">
         <div className="footer-logo">
           <Logo width={50} height={50} />

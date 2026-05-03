@@ -59,7 +59,6 @@ const Contact = () => {
         </h2>
 
         <div className="contact-grid">
-          {/* Contact Info */}
           <div className="contact-info">
              <div className="contact-info-prose">
                 <p>
@@ -108,7 +107,6 @@ const Contact = () => {
              </div>
           </div>
 
-          {/* Form */}
           <div className="contact-form-container">
             <form ref={form} onSubmit={sendEmail} className="form-stack">
               <div className="form-group">

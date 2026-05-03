@@ -1,30 +1,23 @@
 
 :root {
-  /* Color Palette - Business Card Inspired (Black & Gold) */
-  /* Deep Carbon/Black Backgrounds */
   --color-bg: #050505; 
   --color-surface: #0a0a0a;
   --color-surface-light: #141414;
   --color-border: #262626;
   
-  /* Text Colors */
   --color-text-primary: #ffffff;
   --color-text-secondary: #a3a3a3;
   --color-text-muted: #737373;
   
-  /* Brand Colors (Gold/Amber) */
-  --color-brand-primary: #FFC800; /* Vibrant Gold */
-  --color-brand-hover: #E0B000;   /* Darker Gold/Amber */
-  --color-brand-dark: #7A5C00;    /* Bronze/Dark Gold */
+  --color-brand-primary: #FFC800;
+  --color-brand-hover: #E0B000;
+  --color-brand-dark: #7A5C00;
   --color-brand-glow: rgba(255, 200, 0, 0.3);
 
   --color-success: #10b981;
   --color-error: #ef4444;
 
-  /* Typography */
   --font-sans: 'Inter', sans-serif;
-
-  /* Spacing */
   --spacing-container: 1152px;
 }
 
@@ -55,7 +48,7 @@ ul {
   list-style: none;
 }
 
-/* Animations */
+/* animation fade in. NEEDS KEYFRAMES FOR ANIMATION*/
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -70,7 +63,6 @@ ul {
   to { transform: rotate(360deg); }
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -85,7 +77,6 @@ ul {
   background: var(--color-brand-dark); 
 }
 
-/* Utilities */
 .container {
   max-width: var(--spacing-container);
   margin: 0 auto;
@@ -100,13 +91,13 @@ ul {
   display: flex;
   align-items: center;
   gap: 1rem;
-  text-shadow: 0 0 20px rgba(255, 200, 0, 0.2); /* Subtle gold glow */
+  text-shadow: 0 0 20px rgba(255, 200, 0, 0.2);
 }
 
 .section-line {
   width: 3rem;
   height: 2px;
   background-color: var(--color-brand-primary);
-  box-shadow: 0 0 10px var(--color-brand-primary); /* Neon gold line */
+  box-shadow: 0 0 10px var(--color-brand-primary);
   display: block;
 }

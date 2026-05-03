@@ -57,10 +57,10 @@ const Projects = () => {
           {projects.map((project) => (
             <a 
               key={project.id} 
-              href={project.link} // 💡 linking here
-              target="_blank" // 💡 links in new tab
+              href={project.link}
+              target="_blank"
               rel="noopener noreferrer"
-              className="project-card" // 💡 card styling
+              className="project-card"
             >
               <div className="project-image-container">
                 <img 

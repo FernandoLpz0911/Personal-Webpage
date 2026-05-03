@@ -12,7 +12,7 @@
 }
 
 .navbar.scrolled {
-  background-color: rgba(5, 5, 5, 0.8); /* Darker bg */
+  background-color: rgba(5, 5, 5, 0.8);
   backdrop-filter: blur(12px);
   border-bottom-color: rgba(38, 38, 38, 0.5);
   padding: 1rem 0;
@@ -34,7 +34,6 @@
   transition: opacity 0.2s ease;
   cursor: pointer;
   
-  /* Typography Styles */
   font-family: var(--font-sans);
   font-size: 1.5rem;
   font-weight: 700;
@@ -67,7 +66,6 @@
   color: var(--color-brand-primary);
 }
 
-/* Mobile Placeholder */
 .mobile-menu-btn {
   color: var(--color-text-primary);
   cursor: pointer;
