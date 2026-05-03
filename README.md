@@ -4,8 +4,6 @@ A responsive single-page application (SPA) designed to showcase software enginee
 # Key Features
 Dynamic Background System: Implements a custom PuzzleBackground component using SVG paths and probabilistic rendering loops to create organic, non-deterministic animations.
 
-Serverless Contact Form: Integrated with EmailJS to handle form submissions directly from the client side, managing loading states and success/failure feedback loops without a dedicated backend.
-
 Custom Design System: Utilizes a centralized CSS variable strategy (global.css) for consistent theming across typography, spacing, and the specific "Carbon & Gold" color palette.
 
 Responsive Architecture: fluid layout adapters for mobile and desktop viewports, managed via native CSS media queries and React state listeners.
@@ -50,14 +48,6 @@ Bash
 npm run build
 '''
 
-# Configuration
-EmailJS Integration
-The contact form logic is located in src/components/Contact.jsx. To connect a custom EmailJS account:
-
-Update the service_id, template_id, and public key in the sendEmail function and emailjs.init call.
-
-(Recommended) Move these credentials to a .env file for security before public deployment.
-
 # Project Structure
 
 '''
@@ -66,7 +56,6 @@ Plaintext
 src/
 ├── assets/          # Static media assets
 ├── components/      # Functional React components
-│   ├── Contact.jsx  # Form logic and validation
 │   ├── Experience.jsx # Timeline visualization
 │   ├── PuzzleBackground.jsx # SVG animation logic
 │   └── ...

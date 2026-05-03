@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
 import Experience from './components/Experience';
 import PuzzleBackground from './components/PuzzleBackground';
 import Logo from './components/Logo';
@@ -19,7 +18,6 @@ function App() {
         <About />
         <Experience />
         <Projects />
-        <Contact />
       </div>  
       <footer className="app-footer">
         <div className="footer-logo">
