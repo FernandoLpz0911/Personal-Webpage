@@ -24,22 +24,20 @@ const About = () => {
         <div className="about-content-wrapper">
           <div className="about-text">
             <p>
-              I am a Senior Computer Science student at <strong>UIC</strong> with a deep desire for learning and relentless self-improvement. 
-              Unlike typical front-end developers, my expertise spans deep into systems programming, complex algorithms, and hardware integration.
+              I am a Senior Undergraduate Research Assistant as UIC with a large breadth in skills including basic frontend, backend,
+              continuous integration (automated work), and developing machine learning models.
             </p>
             <p>
-              Currently, I am in the process of developing medical software for the Sanchez Lab at University of Illinois at Chicago
+              I am currently in the process of developing my research data and paper for submission at an IEEE conference while wrapping up final exams
+              for Spring 2026. Continuing my work in the laboratory concurrently with my own independent research.
             </p>
 
             <div className="education-block">
               <h3 className="skills-title">Education & Coursework</h3>
               <div className="uni-info">
                 <span className="uni-name">University of Illinois Chicago</span>
-                <span className="uni-degree">B.S. Computer Science ('26)</span>
+                <span className="uni-degree">Bachelors in Computer Science ('27)</span>
               </div>
-              <p className="coursework-list">
-                <strong>Relevant Coursework:</strong> {coursework.join(", ")}
-              </p>
             </div>
             
             <div className="skills-container">
