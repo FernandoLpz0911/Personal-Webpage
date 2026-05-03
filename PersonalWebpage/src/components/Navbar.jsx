@@ -4,9 +4,9 @@ import '../styles/Navbar.css';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Experience', href: '#experience' },
   { name: 'Projects', href: '#projects' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'About', href: '#about' },
 ];
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <a href="#home" className="nav-logo" aria-label="Home">
-          <Logo width={50} height={50} />
+          <Logo width={100} height={100} />
         </a>
         <ul className="nav-menu">
           {navLinks.map((link) => (
