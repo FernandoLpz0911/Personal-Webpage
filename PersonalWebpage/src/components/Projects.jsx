@@ -49,7 +49,6 @@ const Projects = () => {
     <section id="projects" className="projects-section">
       <div className="container">
         <h2 className="section-title">
-          <span className="section-line"></span>
           Projects
         </h2>
         
