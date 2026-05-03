@@ -32,7 +32,7 @@ const projects = [
     description: "A context-aware AI tool using IBM WatsonX and LangChain for document analysis. Features a decoupled architecture with a containerized Django backend and vector embeddings for efficient data processing.",
     techStack: ["Django", "React", "Docker", "WatsonX", "LangChain"],
     image: "RAGAssistant.png", 
-    link: "https://ibm-ai-manual-summarizer-and-upload.vercel.app/",
+    link: "https://github.com/FernandoLpz0911/IBM-AI-Manual-Summarizer-and-Uploader",
   },
   {
   id: 5,

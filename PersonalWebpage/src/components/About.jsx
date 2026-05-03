@@ -18,7 +18,7 @@ const About = () => {
     <section id="about" className="about-section">
       <div className="container">
         <h2 className="section-title">
-          About Me
+          About
         </h2>
         <div className="about-content-wrapper">
           <div className="about-text">
@@ -30,12 +30,12 @@ const About = () => {
               </div>
             </div>
             <p>
-              I am a Senior Undergraduate Research Assistant as UIC with a large breadth in skills including basic frontend, backend,
+              I am a Senior Undergraduate Research Assistant as UIC with a large breadth in skills including frontend, backend,
               continuous integration (automated work), and developing machine learning models.
             </p>
             <p>
               I am currently in the process of developing my research data and paper for submission at an IEEE conference while wrapping up final exams
-              for Spring 2026. Continuing my work in the laboratory concurrently with my own independent research.
+              for Spring 2026. Continuing my work in the laboratory concurrently with my own independent research alongside my XGBoost workout project.
             </p>
 
             

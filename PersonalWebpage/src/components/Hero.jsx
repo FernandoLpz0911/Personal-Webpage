@@ -12,7 +12,7 @@ const Hero = () => {
         <p className="hero-subtitle">
           Undergraduate Research Assistant at UIC
           <br />
-          Specializing in LLM Security with breadth in a multitude of projects
+          Specializing in LLM Security, App Development, and Machine Learning
         </p>
         
         <div className="hero-actions">
