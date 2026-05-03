@@ -23,7 +23,7 @@ const About = () => {
         <div className="about-content-wrapper">
           <div className="about-text">
             <div className="education-block">
-              <h3 className="skills-title">Education & Coursework</h3>
+              <h3 className="skills-title">Education</h3>
               <div className="uni-info">
                 <span className="uni-name">University of Illinois Chicago</span>
                 <span className="uni-degree">Bachelors in Computer Science ('27)</span>
