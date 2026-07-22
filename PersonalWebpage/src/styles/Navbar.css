@@ -87,8 +87,24 @@
     background-color: var(--color-bg);
   }
 
+  .nav-menu.mobile-open {
+    align-items: center;
+  }
+
   .nav-menu.mobile-open .nav-link {
     font-size: 1.125rem;
+    text-align: center;
+  }
+
+  .nav-container {
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  .nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .nav-menu.mobile-open .mobile-menu-divider {
