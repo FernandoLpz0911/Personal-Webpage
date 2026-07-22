@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="nav-container">
+      <div className={`nav-container ${mobileOpen ? 'menu-open' : ''}`}>
         <a href="#home" className="nav-logo" aria-label="Home">
           <Logo width={100} height={100} />
         </a>

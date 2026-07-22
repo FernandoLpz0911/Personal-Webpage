@@ -96,12 +96,12 @@
     text-align: center;
   }
 
-  .nav-container {
+  .nav-container.menu-open {
     position: relative;
     justify-content: flex-end;
   }
 
-  .nav-logo {
+  .nav-container.menu-open .nav-logo {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
