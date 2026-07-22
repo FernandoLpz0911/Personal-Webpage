@@ -3,57 +3,38 @@ import '../styles/Experience.css';
 
 const experiences = [
   {
-  id: 0,
-  role: "Medical Research Assistant",
-  company: "University of Illinois Chicago (UIC)",
-  period: "Jan 2026 - Present",
-  description: [
-    "Optimized database architecture using Firebase, reducing database read/writes by approximately 98% through efficient indexing and query restructuring.",
-    "Architected and deployed Voxylex AI, a full-stack application utilizing speech analysis algorithms to analyze patient data for medical research.",
-    "Standardized development workflows by leading peer code reviews and improving codebase maintainability.",
-    "Developed a centralized error-logging wrapper, reducing boilerplate code by approximately 20% per file."
-  ]
+    id: 0,
+    role: "Undergraduate Research Engineer",
+    company: "Sanchez Research Lab, UIC",
+    period: "Jan 2026 - Present",
+    description: [
+      "Built the multi-app clinical platform (iOS/Android patient app, Windows physician dashboard, web admin console) on one Firebase backend for UIC's oropharyngeal research.",
+      "Designed a multi-tenant Firestore schema with atomic batch writes and an IPC security layer gating every desktop child-window API call.",
+      "Shipped 600+ unit tests across 11 suites, 7-language localization, and CI/CD via GitHub Actions with signed APK/AAB builds.",
+      "Trained 4 YOLO11-pose models on a custom keypoint schema and wrote the Swift/CoreML inference pipeline from scratch for real-time oral motor assessment (Orosense).",
+      "Fused TrueDepth camera data with pose keypoints to measure tongue protrusion in real millimeters via camera-intrinsic unprojection.",
+      "Built a zero-dependency browser tool (GMPLabeler) with a hand-written WGSL GPU compute shader to auto-label and export YOLO training datasets."
+    ]
   },
   {
     id: 1,
-    role: "Aspire To Inspire Mentor",
-    company: "Women in Computer Science",
-    period: "Sep 2025 - Present",
-    description: [
-      "Led and guided two students through the development of personal web portfolios, advising on design, architecture, and deployment best practices.",
-      "Coordinated a collaborative team of four (two mentors, two mentees) to architect a real-time chatting application using Django and React.",
-      "Defined the initial scope and strategy for implementing AWS deployment and future cross-platform expansion to mobile.",
-      "Communicated technical insights and networking strategies, fostering a supportive environment."
-    ]
-  },
-  {
-    id: 2,
-    role: "Event Security",
-    company: "Monterrey Security",
-    period: "Jun 2025 - Present",
-    description: [
-      "Coordinated logistics for large-scale events (60k+ patrons), collaborating with distributed teams to resolve critical incidents and ensure operational safety."
-    ]
-  },
-  {
-    id: 3,
     role: "Freelance Software Engineer",
     company: "Dulce Tentaciones",
     period: "Jun 2025 - Aug 2025",
     description: [
-      "Directed the full SDLC for a local startup, delivering a responsive React application from requirements to deployment.",
-      "Engineered a scalable marketing pipeline using Brevo and EmailJS, capable of processing 1,000+ monthly customer orders without manual intervention.",
-      "Integrated Sanity CMS to enable non-technical content updates, reducing developer maintenance time by 100%."
+      "Directed the full SDLC for a local bakery startup, delivering a responsive React application from requirements to deployment.",
+      "Engineered a marketing pipeline using Brevo and EmailJS, processing 1,000+ monthly customer orders without manual intervention.",
+      "Integrated Sanity CMS to enable non-technical content updates, reducing developer maintenance time."
     ]
   },
   {
-    id: 4,
-    role: "Program Trainer",
+    id: 2,
+    role: "Program Teacher",
     company: "Compudopt",
     period: "Aug 2024 - Feb 2025",
     description: [
-      "Translated complex programming paradigms into accessible K-8 curriculum, covering foundational logic such as loops, control flow, and variable types to build technical literacy for 20+ students per semester.",
-      "Directed hands-on engineering workshops utilizing microcontrollers (Arduino) and circuit logic to foster early proficiency in embedded systems and real-world software use cases."
+      "Translated programming concepts into accessible K-8 curriculum covering loops, control flow, and variable types for 20+ students per semester.",
+      "Directed hands-on engineering workshops using Arduino microcontrollers and circuit logic to build early embedded systems literacy."
     ]
   }
 ];
@@ -65,7 +46,7 @@ const Experience = () => {
         <h2 className="section-title">
           Experience
         </h2>
-        
+
         <div className="timeline">
           {experiences.map((exp) => (
             <div key={exp.id} className="timeline-item">

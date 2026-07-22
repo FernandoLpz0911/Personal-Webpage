@@ -4,44 +4,40 @@ import '../styles/Projects.css';
 const projects = [
   {
     id: 1,
-    title: "Smart Notes Multi-Platform App",
-    description: "A personalized, high-performance notes app MVP built in collaboration with other engineers. Features custom C++ conversion logic integrated with Flutter/Dart and Firebase, supporting seamless synchronization for 20,000+ daily edits.",
-    techStack: ["C++", "Dart", "Flutter", "Firebase"],
-    image: "NotesApp.png",
-    link: "https://github.com/FernandoLpz0911/SmartNotes",
+    title: "Voxylex AI — Clinical Speech Research Platform",
+    description: "Multi-app clinical platform (iOS/Android, Windows, web) on one Firebase backend for UIC oropharyngeal research. 600+ unit tests, 7-language localization, atomic patient registration with Auth rollback.",
+    techStack: ["Flutter", "Firebase", "Dart", "Cloud Run", "GitHub Actions"],
   },
   {
     id: 2,
-    title: "Digital Art Watermark",
-    description: "A verifiable permission system using Merkle Trees and Bloom Filters to provide tamper-proof image verification. Reduced hash lookup time to O(log n).",
-    techStack: ["React", "Django", "SQLite", "Algorithms"],
-    image: "AIWatermarkImage.png",
-    link: "https://ai-watermark-registry.vercel.app/",
+    title: "Orosense — Real-Time Oral Motor Assessment",
+    description: "iOS app measuring tongue function in real millimeters via TrueDepth and camera-intrinsic unprojection. Custom CoreML inference pipeline and hand-written NMS in Swift, 4 YOLO11-pose models across 8 tasks.",
+    techStack: ["Swift", "CoreML", "YOLO11-pose", "TrueDepth"],
   },
   {
     id: 3,
-    title: "Dulce Tentaciones",
-    description: "Full-stack e-commerce platform for a startup bakery. Integrated Sanity CMS for dynamic content and Brevo for marketing, supporting 1,000+ monthly form submissions.",
-    techStack: ["React", "Sanity API", "Brevo", "CSS"],
-    image: "DulceTentaciones.png",
-    link: "https://dulcetentaciones.com/",
+    title: "GMPLabeler — Browser ML Dataset Annotation Tool",
+    description: "Zero-dependency browser tool for YOLO training data: webcam capture, auto-detection, click-to-correct editing. Hand-written WGSL GPU compute shader classifies mouth-ROI pixels every frame.",
+    techStack: ["JavaScript", "WebGPU", "WGSL", "MediaPipe"],
   },
   {
     id: 4,
-    title: "RAG AI Document Assistant",
-    description: "A context-aware AI tool using IBM WatsonX and LangChain for document analysis. Features a decoupled architecture with a containerized Django backend and vector embeddings for efficient data processing.",
-    techStack: ["Django", "React", "Docker", "WatsonX", "LangChain"],
-    image: "RAGAssistant.png", 
-    link: "https://github.com/FernandoLpz0911/IBM-AI-Manual-Summarizer-and-Uploader",
+    title: "Interrupted Execution Coherence (IEC)",
+    description: "Paper draft, sole author. Found llama.cpp restores a KV-cache slot with corrupted attention values silently when metadata matches — no rejection, no error. Built an HMAC-SHA256 detection and scored ~1,500 corruption trials.",
+    techStack: ["Python", "llama.cpp"],
   },
   {
-  id: 5,
-  title: "IoT Smart Home System",
-  description: "Developed a smart home ecosystem integrating real-time motion lighting and sensors. Built a wireless network connecting Arduinos via ESP32 and Blynk, boosting performance by 75% using non-blocking I/O.",
-  techStack: ["C++", "Arduino IDE", "ESP32", "IoT"],
-  image: "SmartHome.png",
-  link: "https://github.com/FernandoLpz0911/Smart-Home-Project",
-}
+    id: 5,
+    title: "Workout AI",
+    description: "Full-stack fitness app: XGBoost 1RM prediction backend on FastAPI/Cloud Run, with an offline-first Dart inference engine mirroring the full ML pipeline for no-network use.",
+    techStack: ["Flutter", "Python", "XGBoost", "FastAPI", "GCP"],
+  },
+  {
+    id: 6,
+    title: "ProphetHacks 2026 — Autonomous Trading Agent",
+    description: "Autonomous prediction-market trading agent, live on Kalshi for 14 days unattended. LLM ensemble forecasting, James-Stein shrinkage on Kelly sizing, $180 spend kill switch, 8-constraint risk pipeline.",
+    techStack: ["Python", "GCP", "Docker", "SQLite"],
+  }
 ];
 
 const Projects = () => {
@@ -51,25 +47,11 @@ const Projects = () => {
         <h2 className="section-title">
           Projects
         </h2>
-        
+
         <div className="projects-grid">
           {projects.map((project) => (
-            <a 
-              key={project.id} 
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-card"
-            >
-              <div className="project-image-container">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="project-image"
-                />
-
-              </div>
-              <div className="project-content"> 
+            <div key={project.id} className="project-card">
+              <div className="project-content">
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-desc">
                   {project.description}
@@ -82,7 +64,7 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </a>
+            </div>
           ))}
         </div>
       </div>
