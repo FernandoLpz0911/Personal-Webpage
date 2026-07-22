@@ -5,37 +5,37 @@ const projects = [
   {
     id: 1,
     title: "Voxylex AI — Clinical Speech Research Platform",
-    description: "Multi-app clinical platform (iOS/Android, Windows, web) on one Firebase backend for UIC oropharyngeal research. 600+ unit tests, 7-language localization, atomic patient registration with Auth rollback.",
+    description: "Multi-app clinical platform (iOS/Android, Windows, web) on one Firebase backend for UIC oropharyngeal research, backed by 600+ unit tests.",
     techStack: ["Flutter", "Firebase", "Dart", "Cloud Run", "GitHub Actions"],
   },
   {
     id: 2,
     title: "Orosense — Real-Time Oral Motor Assessment",
-    description: "iOS app measuring tongue function in real millimeters via TrueDepth and camera-intrinsic unprojection. Custom CoreML inference pipeline and hand-written NMS in Swift, 4 YOLO11-pose models across 8 tasks.",
+    description: "iOS app measuring tongue function in real millimeters via TrueDepth depth data and a custom Swift/CoreML pose-detection pipeline.",
     techStack: ["Swift", "CoreML", "YOLO11-pose", "TrueDepth"],
   },
   {
     id: 3,
     title: "GMPLabeler — Browser ML Dataset Annotation Tool",
-    description: "Zero-dependency browser tool for YOLO training data: webcam capture, auto-detection, click-to-correct editing. Hand-written WGSL GPU compute shader classifies mouth-ROI pixels every frame.",
+    description: "Zero-dependency browser tool for YOLO training data — webcam capture, auto-detection, and a hand-written WGSL GPU shader for pixel classification.",
     techStack: ["JavaScript", "WebGPU", "WGSL", "MediaPipe"],
   },
   {
     id: 4,
     title: "Interrupted Execution Coherence (IEC)",
-    description: "Paper draft, sole author. Found llama.cpp restores a KV-cache slot with corrupted attention values silently when metadata matches — no rejection, no error. Built an HMAC-SHA256 detection and scored ~1,500 corruption trials.",
+    description: "Paper draft, sole author. Found llama.cpp silently restores corrupted KV-cache tensors with no error, and built an HMAC-based detection to close the gap.",
     techStack: ["Python", "llama.cpp"],
   },
   {
     id: 5,
     title: "Workout AI",
-    description: "Full-stack fitness app: XGBoost 1RM prediction backend on FastAPI/Cloud Run, with an offline-first Dart inference engine mirroring the full ML pipeline for no-network use.",
+    description: "Full-stack fitness app pairing an XGBoost 1RM-prediction backend with an offline-first Dart inference engine for no-network use.",
     techStack: ["Flutter", "Python", "XGBoost", "FastAPI", "GCP"],
   },
   {
     id: 6,
     title: "ProphetHacks 2026 — Autonomous Trading Agent",
-    description: "Autonomous prediction-market trading agent, live on Kalshi for 14 days unattended. LLM ensemble forecasting, James-Stein shrinkage on Kelly sizing, $180 spend kill switch, 8-constraint risk pipeline.",
+    description: "Autonomous trading agent live on Kalshi for 14 days unattended, with an LLM forecasting ensemble and an 8-constraint risk pipeline.",
     techStack: ["Python", "GCP", "Docker", "SQLite"],
   }
 ];
