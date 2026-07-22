@@ -27,6 +27,8 @@
 }
 
 .nav-logo {
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   transition: opacity 0.2s ease;
@@ -61,6 +63,8 @@
 }
 
 .mobile-menu-btn {
+  position: relative;
+  z-index: 2;
   background: none;
   border: none;
   padding: 0.5rem;
@@ -72,12 +76,15 @@
   .nav-menu.mobile-open {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    padding: 2rem 1.5rem;
+    height: 100dvh;
+    overflow-y: auto;
+    padding: 6rem 1.5rem 2rem;
     gap: 1.25rem;
     background-color: var(--color-bg);
   }
