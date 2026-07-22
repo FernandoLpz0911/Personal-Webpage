@@ -10,9 +10,9 @@ const Hero = () => {
           <span className="hero-highlight">Fernando Lopez</span>
         </h1>
         <p className="hero-subtitle">
-          Undergraduate Research Assistant at UIC
+          Undergraduate Research Engineer at UIC (Sanchez Research Lab)
           <br />
-          Specializing in LLM Security, App Development, and Machine Learning
+          Specializing in Clinical ML, Computer Vision, and Full-Stack Systems
         </p>
         
         <div className="hero-actions">

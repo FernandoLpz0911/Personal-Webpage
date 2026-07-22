@@ -2,15 +2,11 @@ import React from 'react';
 import '../styles/About.css';
 
 const skills = [
-  "Python", "C++", "JavaScript", "Go", "Java", "SQL",
-  "React", "Django", "Flutter", "Docker", "Kubernetes",
-  "PostgreSQL", "Firebase", "LangChain", "WatsonX", "Agile"
-];
-
-const coursework = [
-  "Artificial Intelligence",
-  "Data Structures", "Machine Organization", "Languages & Automata", 
-  "Programming Language Design", "Math Foundations of Computing"
+  "Python", "Dart", "Swift", "C++", "Java", "JavaScript", "Go", "SQL",
+  "Flutter", "FastAPI", "Django", "React", "AVFoundation",
+  "XGBoost", "scikit-learn", "CoreML", "YOLO11 (pose)", "WebGPU / WGSL", "LangChain", "RAG",
+  "Google Cloud Platform", "Firebase", "Docker", "GitHub Actions",
+  "Git", "Linux", "PostgreSQL", "SQLite", "Figma"
 ];
 
 const About = () => {
@@ -26,19 +22,21 @@ const About = () => {
               <h3 className="skills-title">Education</h3>
               <div className="uni-info">
                 <span className="uni-name">University of Illinois Chicago</span>
-                <span className="uni-degree">Bachelors in Computer Science ('27)</span>
+                <span className="uni-degree">B.S. in Computer Science (Expected May 2027)</span>
               </div>
             </div>
             <p>
-              I am a Senior Undergraduate Research Assistant as UIC with a large breadth in skills including frontend, backend,
-              continuous integration (automated work), and developing machine learning models.
+              I'm an Undergraduate Research Engineer at UIC's Sanchez Research Lab, building the clinical
+              software platform behind ongoing oropharyngeal research — spanning Flutter/Firebase app
+              development, Swift/CoreML on-device ML, and browser-based WebGPU tooling.
             </p>
             <p>
-              I am currently in the process of developing my research data and paper for submission at an IEEE conference while wrapping up final exams
-              for Spring 2026. Continuing my work in the laboratory concurrently with my own independent research alongside my XGBoost workout project.
+              Outside the lab I write independent research on LLM inference-cache integrity and build
+              end-to-end ML systems, from an XGBoost-driven fitness app to an autonomous trading agent
+              built at ProphetHacks 2026.
             </p>
 
-            
+
             <div className="skills-container">
                <h3 className="skills-title">Technical Skills</h3>
                <div className="skills-grid">
