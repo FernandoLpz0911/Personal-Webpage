@@ -22,6 +22,13 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileOpen]);
+
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className={`nav-container ${mobileOpen ? 'menu-open' : ''}`}>
