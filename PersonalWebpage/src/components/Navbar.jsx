@@ -41,6 +41,33 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          <li className="mobile-menu-divider" aria-hidden="true"></li>
+          <li className="mobile-menu-socials">
+            <a href="https://github.com/FernandoLpz0911" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img src="/github-mark-white.png" alt="" width="22" height="22" />
+            </a>
+            <a href="https://linkedin.com/in/fernando-lopez-dev" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="/InBug-White.png" alt="" width="22" height="22" />
+            </a>
+          </li>
+          <li className="mobile-menu-actions">
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mobile-action-btn mobile-action-primary"
+              onClick={() => setMobileOpen(false)}
+            >
+              Resume
+            </a>
+            <a
+              href="mailto:flope8@uic.edu"
+              className="mobile-action-btn mobile-action-outline"
+              onClick={() => setMobileOpen(false)}
+            >
+              Contact Me
+            </a>
+          </li>
         </ul>
         <button
           type="button"
