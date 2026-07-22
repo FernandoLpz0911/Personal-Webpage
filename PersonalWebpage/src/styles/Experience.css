@@ -1,96 +1,80 @@
 
 .experience-section {
-  padding: 6rem 0;
+  padding: 5rem 0;
   position: relative;
   z-index: 10;
 }
 
-.timeline {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  padding-left: 2rem;
-  border-left: 2px solid var(--color-surface-light);
+.cv-list {
+  display: flex;
+  flex-direction: column;
 }
 
-.timeline-item {
-  position: relative;
-  margin-bottom: 3rem;
+.cv-entry {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-surface-light);
 }
 
-.timeline-item:last-child {
-  margin-bottom: 0;
+.cv-entry:first-child {
+  padding-top: 0;
 }
 
-.timeline-marker {
-  position: absolute;
-  left: -2.43rem;
-  top: 0.25rem;
-  width: 0.875rem;
-  height: 0.875rem;
-  background-color: var(--color-bg);
-  border: 2px solid var(--color-brand-primary);
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(255, 200, 0, 0.4);
+.cv-entry:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
-.timeline-content {
-  background-color: rgba(255, 255, 255, 0.02);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  border: 1px solid transparent;
-  transition: border-color 0.3s;
-}
-
-.timeline-content:hover {
-  border-color: rgba(255, 200, 0, 0.2);
-}
-
-.timeline-header {
+.cv-entry-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 0.25rem;
+  gap: 0.5rem 1rem;
+  margin-bottom: 0.75rem;
 }
 
-.exp-role {
-  font-size: 1.25rem;
-  font-weight: 700;
+.cv-role {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #fff;
 }
 
-.exp-company {
+.cv-company {
+  font-family: var(--font-sans);
   font-size: 1rem;
+  font-weight: 400;
   color: var(--color-brand-primary);
-  margin-bottom: 1rem;
-  font-weight: 500;
 }
 
-.exp-period {
-  font-size: 0.875rem;
+.cv-period {
+  font-size: 0.85rem;
   color: var(--color-text-muted);
   font-family: monospace;
+  white-space: nowrap;
 }
 
-.exp-list {
+.cv-list-items {
   list-style-type: disc;
   padding-left: 1.25rem;
   color: var(--color-text-secondary);
   line-height: 1.6;
 }
 
-.exp-list li {
+.cv-list-items li {
   margin-bottom: 0.5rem;
 }
 
-.exp-list li::marker {
+.cv-list-items li::marker {
   color: var(--color-brand-primary);
 }
 
+.cv-list-items li:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 640px) {
-  .timeline-header {
+  .cv-entry-header {
     flex-direction: column;
   }
 }

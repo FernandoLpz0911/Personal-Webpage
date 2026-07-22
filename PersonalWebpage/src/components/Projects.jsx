@@ -22,18 +22,12 @@ const projects = [
   },
   {
     id: 4,
-    title: "Interrupted Execution Coherence (IEC)",
-    description: "Paper draft, sole author. Found llama.cpp silently restores corrupted KV-cache tensors with no error, and built an HMAC-based detection to close the gap.",
-    techStack: ["Python", "llama.cpp"],
-  },
-  {
-    id: 5,
     title: "Workout AI",
     description: "Full-stack fitness app pairing an XGBoost 1RM-prediction backend with an offline-first Dart inference engine for no-network use.",
     techStack: ["Flutter", "Python", "XGBoost", "FastAPI", "GCP"],
   },
   {
-    id: 6,
+    id: 5,
     title: "ProphetHacks 2026 — Autonomous Trading Agent",
     description: "Autonomous trading agent live on Kalshi for 14 days unattended, with an LLM forecasting ensemble and an 8-constraint risk pipeline.",
     techStack: ["Python", "GCP", "Docker", "SQLite"],
@@ -56,13 +50,9 @@ const Projects = () => {
                 <p className="project-desc">
                   {project.description}
                 </p>
-                <div className="tech-stack">
-                  {project.techStack.map((tech) => (
-                    <span key={tech} className="tech-tag">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+                <p className="tech-stack">
+                  {project.techStack.join(', ')}
+                </p>
               </div>
             </div>
           ))}

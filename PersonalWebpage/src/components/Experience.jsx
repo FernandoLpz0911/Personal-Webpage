@@ -47,22 +47,20 @@ const Experience = () => {
           Experience
         </h2>
 
-        <div className="timeline">
+        <div className="cv-list">
           {experiences.map((exp) => (
-            <div key={exp.id} className="timeline-item">
-              <div className="timeline-marker"></div>
-              <div className="timeline-content">
-                <div className="timeline-header">
-                  <h3 className="exp-role">{exp.role}</h3>
-                  <span className="exp-period">{exp.period}</span>
-                </div>
-                <h4 className="exp-company">{exp.company}</h4>
-                <ul className="exp-list">
-                  {exp.description.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
+            <div key={exp.id} className="cv-entry">
+              <div className="cv-entry-header">
+                <h3 className="cv-role">
+                  {exp.role} <span className="cv-company">— {exp.company}</span>
+                </h3>
+                <span className="cv-period">{exp.period}</span>
               </div>
+              <ul className="cv-list-items">
+                {exp.description.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

@@ -22,11 +22,6 @@
   text-align: left; 
 }
 
-.highlight {
-  color: var(--color-brand-primary);
-  font-weight: 600;
-}
-
 .education-block {
   margin-top: 1rem;
   padding: 1.5rem;
@@ -42,23 +37,15 @@
 }
 
 .uni-name {
+  font-family: var(--font-serif);
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.1rem;
 }
 
 .uni-degree {
   color: var(--color-brand-primary);
   font-size: 0.95rem;
-}
-
-.coursework-list {
-  font-size: 0.9rem;
-  color: var(--color-text-muted);
-}
-
-.coursework-list strong {
-  color: var(--color-text-secondary);
 }
 
 .skills-container {
@@ -68,6 +55,7 @@
 }
 
 .skills-title {
+  font-family: var(--font-serif);
   color: #fff;
   font-size: 1.25rem;
   margin-bottom: 1rem;
@@ -91,24 +79,8 @@
   margin-bottom: 0.75rem;
 }
 
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.skill-pill {
-  font-size: 0.875rem;
-  color: var(--color-brand-primary);
-  background-color: rgba(255, 200, 0, 0.05);
-  border: 1px solid rgba(255, 200, 0, 0.2);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: all 0.2s ease;
-}
-
-.skill-pill:hover {
-  background-color: rgba(255, 200, 0, 0.15);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 200, 0, 0.1);
+.skill-list-text {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
 }

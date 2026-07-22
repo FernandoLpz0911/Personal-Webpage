@@ -22,22 +22,20 @@ const Leadership = () => {
           Leadership
         </h2>
 
-        <div className="timeline">
+        <div className="cv-list">
           {roles.map((item) => (
-            <div key={item.id} className="timeline-item">
-              <div className="timeline-marker"></div>
-              <div className="timeline-content">
-                <div className="timeline-header">
-                  <h3 className="exp-role">{item.role}</h3>
-                  <span className="exp-period">{item.period}</span>
-                </div>
-                <h4 className="exp-company">{item.company}</h4>
-                <ul className="exp-list">
-                  {item.description.map((desc, index) => (
-                    <li key={index}>{desc}</li>
-                  ))}
-                </ul>
+            <div key={item.id} className="cv-entry">
+              <div className="cv-entry-header">
+                <h3 className="cv-role">
+                  {item.role} <span className="cv-company">— {item.company}</span>
+                </h3>
+                <span className="cv-period">{item.period}</span>
               </div>
+              <ul className="cv-list-items">
+                {item.description.map((desc, index) => (
+                  <li key={index}>{desc}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>

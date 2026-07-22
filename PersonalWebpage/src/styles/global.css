@@ -18,7 +18,8 @@
   --color-error: #ef4444;
 
   --font-sans: 'Inter', sans-serif;
-  --spacing-container: 1152px;
+  --font-serif: 'Lora', Georgia, serif;
+  --spacing-container: 880px;
 }
 
 * {
@@ -84,14 +85,15 @@ ul {
 }
 
 .section-title {
-  font-size: 1.875rem;
-  font-weight: 700;
+  font-family: var(--font-serif);
+  font-size: 1.75rem;
+  font-weight: 600;
   color: #fff;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
-  text-shadow: 0 0 20px rgba(255, 200, 0, 0.2);
+  text-shadow: 0 0 12px rgba(255, 200, 0, 0.12);
 }
 
 .section-line {

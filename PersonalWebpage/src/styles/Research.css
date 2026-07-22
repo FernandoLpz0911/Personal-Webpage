@@ -1,0 +1,44 @@
+
+.research-section {
+  padding: 5rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.research-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.research-entry {
+  padding-left: 1.25rem;
+  border-left: 2px solid var(--color-brand-primary);
+}
+
+.research-title {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.research-meta {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.research-abstract {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.research-tech {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}

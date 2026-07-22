@@ -53,11 +53,7 @@ const About = () => {
                {skillGroups.map(group => (
                  <div key={group.category} className="skill-group">
                    <h4 className="skill-group-title">{group.category}</h4>
-                   <div className="skills-grid">
-                     {group.items.map(skill => (
-                       <span key={skill} className="skill-pill">{skill}</span>
-                     ))}
-                   </div>
+                   <p className="skill-list-text">{group.items.join(', ')}</p>
                  </div>
                ))}
             </div>
