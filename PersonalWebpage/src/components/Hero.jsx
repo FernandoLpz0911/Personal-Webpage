@@ -19,11 +19,11 @@ const Hero = () => {
           <a href="#projects" className="btn btn-outline">
             My Work
           </a>
-          <a 
-            href="/resume.pdf" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="btn btn-outline"
+          <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-primary"
           >
             Resume
           </a>

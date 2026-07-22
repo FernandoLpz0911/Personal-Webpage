@@ -1,7 +1,7 @@
 
 .hero-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 78vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,6 +85,19 @@
 .btn-outline:hover {
   background-color: var(--color-brand-primary);
   color: #000;
+  box-shadow: 0 0 15px var(--color-brand-glow);
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: var(--color-brand-primary);
+  color: #000;
+  border: 2px solid var(--color-brand-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-brand-hover);
+  border-color: var(--color-brand-hover);
   box-shadow: 0 0 15px var(--color-brand-glow);
   transform: scale(1.05);
 }

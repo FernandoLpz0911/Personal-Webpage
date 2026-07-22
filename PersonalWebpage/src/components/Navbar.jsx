@@ -12,6 +12,7 @@ const navLinks = [
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,12 +28,13 @@ const Navbar = () => {
         <a href="#home" className="nav-logo" aria-label="Home">
           <Logo width={100} height={100} />
         </a>
-        <ul className="nav-menu">
+        <ul className={`nav-menu ${mobileOpen ? 'mobile-open' : ''}`}>
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a 
-                href={link.href} 
+              <a
+                href={link.href}
                 className="nav-link"
+                onClick={() => setMobileOpen(false)}
                 {...(link.href.endsWith('.pdf') ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               >
                 {link.name}
@@ -40,13 +42,28 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="mobile-menu-btn">
+        <button
+          type="button"
+          className="mobile-menu-btn"
+          aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={mobileOpen}
+          onClick={() => setMobileOpen((open) => !open)}
+        >
            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-             <line x1="3" y1="12" x2="21" y2="12"></line>
-             <line x1="3" y1="6" x2="21" y2="6"></line>
-             <line x1="3" y1="18" x2="21" y2="18"></line>
+             {mobileOpen ? (
+               <>
+                 <line x1="4" y1="4" x2="20" y2="20"></line>
+                 <line x1="20" y1="4" x2="4" y2="20"></line>
+               </>
+             ) : (
+               <>
+                 <line x1="3" y1="12" x2="21" y2="12"></line>
+                 <line x1="3" y1="6" x2="21" y2="6"></line>
+                 <line x1="3" y1="18" x2="21" y2="18"></line>
+               </>
+             )}
            </svg>
-        </div>
+        </button>
       </div>
     </nav>
   );

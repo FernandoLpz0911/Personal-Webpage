@@ -74,6 +74,23 @@
   font-weight: 600;
 }
 
+.skill-group {
+  margin-bottom: 1.5rem;
+}
+
+.skill-group:last-child {
+  margin-bottom: 0;
+}
+
+.skill-group-title {
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
 .skills-grid {
   display: flex;
   flex-wrap: wrap;

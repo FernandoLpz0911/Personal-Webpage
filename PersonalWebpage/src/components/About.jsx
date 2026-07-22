@@ -1,12 +1,23 @@
 import React from 'react';
 import '../styles/About.css';
 
-const skills = [
-  "Python", "Dart", "Swift", "C++", "Java", "JavaScript", "Go", "SQL",
-  "Flutter", "FastAPI", "Django", "React", "AVFoundation",
-  "XGBoost", "scikit-learn", "CoreML", "YOLO11 (pose)", "WebGPU / WGSL", "LangChain", "RAG",
-  "Google Cloud Platform", "Firebase", "Docker", "GitHub Actions",
-  "Git", "Linux", "PostgreSQL", "SQLite", "Figma"
+const skillGroups = [
+  {
+    category: "Languages",
+    items: ["Python", "Dart", "Swift", "C++", "Java", "JavaScript", "Go", "SQL"]
+  },
+  {
+    category: "ML & Data",
+    items: ["XGBoost", "scikit-learn", "CoreML", "YOLO11 (pose)", "WebGPU / WGSL", "LangChain", "RAG"]
+  },
+  {
+    category: "Frameworks",
+    items: ["Flutter", "FastAPI", "Django", "React", "AVFoundation"]
+  },
+  {
+    category: "Cloud & Tools",
+    items: ["Google Cloud Platform", "Firebase", "Docker", "GitHub Actions", "Git", "Linux", "PostgreSQL", "SQLite", "Figma"]
+  }
 ];
 
 const About = () => {
@@ -39,11 +50,16 @@ const About = () => {
 
             <div className="skills-container">
                <h3 className="skills-title">Technical Skills</h3>
-               <div className="skills-grid">
-                 {skills.map(skill => (
-                   <span key={skill} className="skill-pill">{skill}</span>
-                 ))}
-               </div>
+               {skillGroups.map(group => (
+                 <div key={group.category} className="skill-group">
+                   <h4 className="skill-group-title">{group.category}</h4>
+                   <div className="skills-grid">
+                     {group.items.map(skill => (
+                       <span key={skill} className="skill-pill">{skill}</span>
+                     ))}
+                   </div>
+                 </div>
+               ))}
             </div>
           </div>
         </div>
