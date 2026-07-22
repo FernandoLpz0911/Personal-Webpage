@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Logo from './Logo';
 import '../styles/Navbar.css';
 
 const navLinks = [
   { name: 'Home', href: '#home' },
+  { name: 'Research', href: '#research' },
   { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
   { name: 'Leadership', href: '#leadership' },
@@ -26,7 +26,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className={`nav-container ${mobileOpen ? 'menu-open' : ''}`}>
         <a href="#home" className="nav-logo" aria-label="Home">
-          <Logo width={100} height={100} />
+          Fernando Lopez
         </a>
         <ul className={`nav-menu ${mobileOpen ? 'mobile-open' : ''}`}>
           {navLinks.map((link) => (
