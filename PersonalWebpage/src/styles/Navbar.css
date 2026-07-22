@@ -81,11 +81,10 @@
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 1.5rem;
+    height: 100vh;
+    padding: 2rem 1.5rem;
     gap: 1.25rem;
-    background-color: rgba(5, 5, 5, 0.95);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-bg);
   }
 
   .nav-menu.mobile-open .nav-link {
