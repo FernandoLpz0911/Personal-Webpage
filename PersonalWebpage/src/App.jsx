@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Research from './components/Research';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Leadership from './components/Leadership';
@@ -14,7 +13,6 @@ function App() {
       <Navbar />
       <div className="content-layer">
         <Hero />
-        <Research />
         <Projects />
         <Experience />
         <Leadership />

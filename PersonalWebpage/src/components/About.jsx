@@ -8,7 +8,7 @@ const skillGroups = [
   },
   {
     category: "ML & Data",
-    items: ["XGBoost", "scikit-learn", "CoreML", "YOLO11 (pose)", "WebGPU / WGSL", "LangChain", "RAG"]
+    items: ["XGBoost", "scikit-learn", "CoreML", "YOLO11 (pose)", "LangChain", "RAG"]
   },
   {
     category: "Frameworks",
@@ -39,11 +39,10 @@ const About = () => {
             <p>
               I'm an Undergraduate Research Engineer at UIC's Sanchez Research Lab, building the clinical
               software platform behind ongoing oropharyngeal research — spanning Flutter/Firebase app
-              development, Swift/CoreML on-device ML, and browser-based WebGPU tooling.
+              development, and Swift/CoreML on-device ML.
             </p>
             <p>
-              Outside the lab I write independent research on LLM inference-cache integrity and build
-              end-to-end ML systems, from an XGBoost-driven fitness app to an autonomous trading agent
+              Outside the lab I build end-to-end ML systems, from an XGBoost-driven fitness app to an autonomous trading agent
               built at ProphetHacks 2026.
             </p>
 

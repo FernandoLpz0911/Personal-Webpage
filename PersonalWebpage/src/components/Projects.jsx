@@ -5,7 +5,7 @@ const projects = [
   {
     id: 1,
     title: "Voxylex AI — Clinical Speech Research Platform",
-    description: "Multi-app clinical platform (iOS/Android, Windows, web) on one Firebase backend for UIC oropharyngeal research, backed by 600+ unit tests.",
+    description: "Multi-app clinical platform (iOS/Android, Windows, web) on one Firebase backend for UIC oropharyngeal research, backed by 2,100+ Flutter tests and 650+ Jest tests.",
     techStack: ["Flutter", "Firebase", "Dart", "Cloud Run", "GitHub Actions"],
   },
   {
@@ -16,18 +16,12 @@ const projects = [
   },
   {
     id: 3,
-    title: "GMPLabeler — Browser ML Dataset Annotation Tool",
-    description: "Zero-dependency browser tool for YOLO training data — webcam capture, auto-detection, and a hand-written WGSL GPU shader for pixel classification.",
-    techStack: ["JavaScript", "WebGPU", "WGSL", "MediaPipe"],
-  },
-  {
-    id: 4,
     title: "Workout AI",
     description: "Full-stack fitness app pairing an XGBoost 1RM-prediction backend with an offline-first Dart inference engine for no-network use.",
     techStack: ["Flutter", "Python", "XGBoost", "FastAPI", "GCP"],
   },
   {
-    id: 5,
+    id: 4,
     title: "ProphetHacks 2026 — Autonomous Trading Agent",
     description: "Autonomous trading agent live on Kalshi for 14 days unattended, with an LLM forecasting ensemble and an 8-constraint risk pipeline.",
     techStack: ["Python", "GCP", "Docker", "SQLite"],
