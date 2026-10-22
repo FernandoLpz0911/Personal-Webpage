@@ -10,10 +10,9 @@ const experiences = [
     description: [
       "Built the multi-app clinical platform (iOS/Android patient app, Windows physician dashboard, web admin console) on one Firebase backend for UIC's oropharyngeal research.",
       "Designed a multi-tenant Firestore schema with atomic batch writes and an IPC security layer gating every desktop child-window API call.",
-      "Shipped 600+ unit tests across 11 suites, 7-language localization, and CI/CD via GitHub Actions with signed APK/AAB builds.",
+      "Shipped 2,100+ Flutter tests and 650+ Jest tests, 7-language localization, and CI/CD via GitHub Actions with signed APK/AAB builds.",
       "Trained 4 YOLO11-pose models on a custom keypoint schema and wrote the Swift/CoreML inference pipeline from scratch for real-time oral motor assessment (Orosense).",
-      "Fused TrueDepth camera data with pose keypoints to measure tongue protrusion in real millimeters via camera-intrinsic unprojection.",
-      "Built a zero-dependency browser tool (GMPLabeler) with a hand-written WGSL GPU compute shader to auto-label and export YOLO training datasets."
+      "Fused TrueDepth camera data with pose keypoints to measure tongue protrusion in real millimeters via camera-intrinsic unprojection."
     ]
   },
   {
