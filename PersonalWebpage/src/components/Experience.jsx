@@ -11,7 +11,7 @@ const experiences = [
       "Built the multi-app clinical platform (iOS/Android patient app, Windows physician dashboard, web admin console) on one Firebase backend for UIC's oropharyngeal research.",
       "Designed a multi-tenant Firestore schema with atomic batch writes and an IPC security layer gating every desktop child-window API call.",
       "Shipped 2,100+ Flutter tests and 650+ Jest tests, 7-language localization, and CI/CD via GitHub Actions with signed APK/AAB builds.",
-      "Trained 4 YOLO11-pose models on a custom keypoint schema and wrote the Swift/CoreML inference pipeline from scratch for real-time oral motor assessment (Orosense).",
+      "Wrote the Swift/CoreML inference pipeline from scratch that runs three YOLO11-pose models on-device for real-time oral motor assessment (Orosense).",
       "Fused TrueDepth camera data with pose keypoints to measure tongue protrusion in real millimeters via camera-intrinsic unprojection."
     ]
   },
@@ -22,7 +22,7 @@ const experiences = [
     period: "Jun 2025 - Aug 2025",
     description: [
       "Directed the full SDLC for a local bakery startup, delivering a responsive React application from requirements to deployment.",
-      "Engineered a marketing pipeline using Brevo and EmailJS, processing 1,000+ monthly customer orders without manual intervention.",
+      "Integrated EmailJS order inquiries and a Brevo newsletter so customers can reach the bakery without manual follow-up.",
       "Integrated Sanity CMS to enable non-technical content updates, reducing developer maintenance time."
     ]
   },
