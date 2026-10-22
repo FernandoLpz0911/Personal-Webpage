@@ -22,7 +22,7 @@ const experiences = [
     period: "Jun 2025 - Aug 2025",
     description: [
       "Directed the full SDLC for a local bakery startup, delivering a responsive React application from requirements to deployment.",
-      "Integrated EmailJS order inquiries and a Brevo newsletter so customers can reach the bakery without manual follow-up.",
+      "Integrated EmailJS order inquiries and a Brevo newsletter.",
       "Integrated Sanity CMS to enable non-technical content updates, reducing developer maintenance time."
     ]
   },
