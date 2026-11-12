@@ -1,4 +1,35 @@
 ---
 import Layout from "../layouts/Layout.astro";
+const intro = "Computer science senior at the University of Illinois Chicago, graduating 2027. I do research on LLM security and build apps and machine learning models on the side.";
+const links = [
+  ["Resume", "/resume.pdf"],
+  ["Email", "mailto:flope8@uic.edu"],
+  ["Github", "https://github.com/FernandoLpz0911"],
+];
+const projects = [
+  ["Digital Art Watermark", "tamper-proof image registry built on Merkle trees", "https://ai-watermark-registry.vercel.app/"],
+  ["RAG Document Assistant", "ask questions of uploaded manuals, on WatsonX", "https://github.com/FernandoLpz0911/IBM-AI-Manual-Summarizer-and-Uploader"],
+  ["Smart Notes", "cross-platform notes app in Flutter with a C++ conversion core", "https://github.com/FernandoLpz0911/SmartNotes"],
+  ["Dulce Tentaciones", "online shop for a Chicago bakery", "https://dulcetentaciones.com/"],
+];
+const experience = [
+  ["Undergraduate Research Assistant", "UIC — LLM security", "2026–now"],
+  ["Mentor", "Women in Computer Science", "2025–now"],
+  ["Event Security", "Monterrey Security", "2025–now"],
+  ["Freelance Software Engineer", "Dulce Tentaciones", "2025"],
+];
 ---
-<Layout title="Home"><h1>Placeholder home</h1><a href="/projects/notes/">Notes project</a></Layout>
+<Layout title="Fernando Lopez" description={intro}>
+  <p class="intro">{intro}</p>
+  <p class="links">
+    {links.map(([t, h], i) => (<Fragment><a href={h}>{t}</a>{i < links.length - 1 ? ", " : "."}</Fragment>))}
+  </p>
+  <h2>Projects</h2>
+  <ul>
+    {projects.map(([t, d, h]) => <li><a href={h}>{t}</a> — {d}.</li>)}
+  </ul>
+  <h2>Experience</h2>
+  <ul>
+    {experience.map(([r, p, y]) => <li class="x"><span>{r}, {p}</span><span class="muted">{y}</span></li>)}
+  </ul>
+</Layout>

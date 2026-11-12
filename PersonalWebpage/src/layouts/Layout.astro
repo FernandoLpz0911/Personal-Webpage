@@ -1,19 +1,88 @@
 ---
-const { title = "Placeholder" } = Astro.props;
+import "@fontsource-variable/source-serif-4/opsz.css";
+import "@fontsource-variable/source-serif-4/opsz-italic.css";
+const { title, description = "Fernando Lopez, computer science student at the University of Illinois Chicago.", frontmatter } = Astro.props;
+const pageTitle = title ?? frontmatter?.title ?? "Fernando Lopez";
+const isHome = Astro.url.pathname === "/";
+const Name = isHome ? "h1" : "p";
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <script is:inline>
       (function () {
-        var t = localStorage.getItem("theme");
-        if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        var t = null;
+        try { t = localStorage.getItem("theme"); } catch (e) {}
+        if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
         document.documentElement.setAttribute("data-theme", t);
       })();
     </script>
   </head>
-  <body><slot /></body>
+  <body>
+    <main>
+      <header>
+        <svg class="mark" width="24" height="24" viewBox="2 2 20 20" aria-hidden="true"><path d="M3 7H8a2.5 2.5 0 1 1 4 0H17V12a2.5 2.5 0 1 1 0 4V21H12a2.5 2.5 0 1 0-4 0H3V16a2.5 2.5 0 1 0 0-4Z" /></svg>
+        <Name class="name"><a href="/">Fernando Lopez</a></Name>
+        <button class="toggle" type="button" aria-label="Switch theme"><span class="to-dark">dark</span><span class="to-light">light</span></button>
+      </header>
+      <slot />
+    </main>
+    <script is:inline>
+      (function () {
+        var root = document.documentElement, btn = document.querySelector(".toggle");
+        var mq = matchMedia("(prefers-color-scheme: dark)");
+        var saved = false;
+        try { saved = !!localStorage.getItem("theme"); } catch (e) {}
+        function label() { btn.setAttribute("aria-label", "Switch to " + (root.dataset.theme === "dark" ? "light" : "dark") + " theme"); }
+        label();
+        btn.addEventListener("click", function () {
+          var t = root.dataset.theme === "dark" ? "light" : "dark";
+          root.dataset.theme = t; saved = true;
+          try { localStorage.setItem("theme", t); } catch (e) {}
+          label();
+        });
+        mq.addEventListener("change", function () {
+          if (saved) return;
+          root.dataset.theme = mq.matches ? "dark" : "light"; label();
+        });
+      })();
+    </script>
+  </body>
 </html>
+
+<style is:global>
+  :root { --bg: #fbfaf6; --fg: #1c1b18; --muted: #6e695f; }
+  :root[data-theme="dark"] { --bg: #181714; --fg: #e9e5db; --muted: #9c968a; }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--fg); padding: 0 20px 120px; font: 400 19px/1.6 "Source Serif 4 Variable", "Iowan Old Style", Charter, Georgia, serif; }
+  main { max-width: 34rem; margin: 0 auto; padding-top: 5.5rem; overflow-wrap: break-word; }
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+  a:hover { text-decoration-thickness: 2px; }
+  button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  h1, h2, p { margin: 0; font-size: inherit; font-weight: inherit; }
+  img { max-width: 100%; height: auto; }
+  .muted { color: var(--muted); }
+  header { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 3rem; }
+  .mark { flex: none; display: block; }
+  .mark path { fill: #f2c230; stroke: var(--fg); stroke-width: 1.4; stroke-linejoin: round; }
+  .name { font-weight: 600; }
+  .name a { text-decoration: none; }
+  .toggle { margin-left: auto; font-style: italic; color: var(--muted); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+  .to-light { display: none; }
+  [data-theme="dark"] .to-dark { display: none; }
+  [data-theme="dark"] .to-light { display: inline; }
+  .intro { font-size: 1.3rem; line-height: 1.45; }
+  .links { margin-top: 1rem; }
+  h2 { font-style: italic; color: var(--muted); margin: 3rem 0 0.75rem; }
+  li { margin-bottom: 0.55rem; }
+  li.x { display: flex; justify-content: space-between; gap: 1.5rem; }
+  li.x .muted { white-space: nowrap; font-variant-numeric: tabular-nums; }
+</style>
